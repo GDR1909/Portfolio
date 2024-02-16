@@ -1,0 +1,55 @@
+h2 {
+    font-family: 'Syne';
+    font-size: 56px;
+    font-weight: 800;
+    margin: 0;
+    width: fit-content;
+    transition: all ease-in-out 125ms;
+
+    &:hover {
+        color: #FF9900;
+        transition: all ease-in-out 125ms;
+    }
+}
+
+.aboutMeContent {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-right: 100px;
+
+        span {
+            font-size: 24px;
+        }
+
+        button {
+            width: 213px;
+            height: 68px;
+            border: solid 4px black;
+            padding: 20px 60px 20px 60px;
+            background-color: #FFFCF3;
+            font-family: 'Overpass';
+            font-size: 20px;
+            margin-top: 100px;
+            transition: all ease-in-out 125ms;
+
+            &:hover {
+                cursor: pointer;
+                background-color: #ffecd2;
+                font-weight: bold;
+                width: 250px;
+                transition: all ease-in-out 125ms;
+            }
+        }
+    }
+
+    img {
+        height: 500px;
+        width: 500px;
+    }
+}

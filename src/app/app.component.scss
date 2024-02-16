@@ -1,4 +1,5 @@
 app-header {
+    background-color: #FFFCF3;
     height: 92px;
     width: 86%;
     display: flex;
@@ -15,4 +16,10 @@ app-landingPage {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+app-about-me {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 }

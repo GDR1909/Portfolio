@@ -1,0 +1,99 @@
+h1 {
+    font-family: 'Syne';
+    margin: 0;
+    font-weight: 800;
+    font-size: 128px;
+    text-align: center;
+}
+
+.borderlineAndName {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.borderline {
+    border: 3px solid black;
+    height: 0;
+    width: 510px;
+}
+
+h2 {
+    color: #FF9900;
+    font-weight: 700;
+    font-size: 48px;
+    margin: 0;
+}
+
+.email {
+    font-weight: 300;
+    font-size: 23px;
+    rotate: 270deg;
+    position: absolute;
+    left: -27px;
+    bottom: 150px;
+    transition: all ease-in-out 125ms;
+
+    &:hover {
+        cursor: pointer;
+        color: #FF9900;
+        transition: all ease-in-out 125ms;
+    }
+}
+
+.scrollDownDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    position: absolute;
+    right: 100px;
+    bottom: 10px;
+
+    img {
+        height: 60px;
+        width: 35px;
+        animation: bounceAnimation 3s infinite;
+    }
+
+    span {
+        font-weight: 300;
+        font-size: 23px;
+        transition: all ease-in-out 125ms;
+    
+        &:hover {
+            cursor: pointer;
+            color: #FF9900;
+            transition: all ease-in-out 125ms;
+        }
+    }
+}
+
+@keyframes bounceAnimation {
+    0%,20%,50%,80%,to {
+        transform: translateY(0)
+    }
+
+    40% {
+        transform: translateY(-30px)
+    }
+
+    60% {
+        transform: translateY(-15px)
+    }
+}
+
+// @keyframes reverseBounceAnimation {
+//     0%,20%,50%,80%,to {
+//         transform: translateY(0)
+//     }
+
+//     40% {
+//         transform: translateY(30px)
+//     }
+
+//     60% {
+//         transform: translateY(15px)
+//     }
+// }

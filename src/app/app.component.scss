@@ -31,3 +31,11 @@ app-arrow {
     align-items: center;
     overflow: hidden;
 }
+
+app-my-skills {
+    height: calc(100vh - 126px);
+    display: flex;
+    justify-content: center;
+    border: 4px solid black;
+    margin-top: 34px;
+}

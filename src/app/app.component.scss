@@ -1,7 +1,7 @@
 app-header {
     background-color: #FFFCF3;
     height: 92px;
-    width: 86%;
+    width: calc(100% - 200px);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -22,4 +22,12 @@ app-about-me {
     height: 100vh;
     display: flex;
     flex-direction: column;
+}
+
+app-arrow {
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
 }

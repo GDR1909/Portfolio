@@ -1,3 +1,8 @@
 <h2>My skills</h2>
 
-<div></div>
+<div class="iconsList">
+    <div *ngFor="let icon of iconSinglePath; let i = index">
+        <img [src]="iconFullPath + icon">
+        <span>{{ iconName[i] }}</span>
+    </div>
+</div>

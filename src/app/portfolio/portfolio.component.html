@@ -3,5 +3,15 @@
 <span>This page is a sample of my work - please feel free to try them out.</span>
 
 <div class="portfolioList">
+    <div *ngFor="let project of projects" class="project">
+        <img [src]="project.img">
 
+        <div class="projectInfo">
+            <h3>{{ project.name }}</h3>
+            <span style="color: #FF9900">{{ project.usedTech }}</span>
+            <span>{{ project.description }}</span>
+            <a [href]="project.gitHubURL">GitHub</a>
+            <a [href]="project.liveTestURL">Live Test</a>
+        </div>
+    </div>
 </div>

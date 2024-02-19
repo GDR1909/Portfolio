@@ -16,3 +16,26 @@ span {
     font-weight: 400;
     font-size: 23px;
 }
+
+.project {
+    display: flex;
+    gap: 10px;
+}
+
+img {
+    width: 620px;
+    height: 393px;
+    padding: 10px 0px 10px 0px;
+    object-fit: cover;
+    // filter: grayscale(100%);
+}
+
+.projectInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+h3 {
+    font-family: "Syne";
+    font-size: 40px;
+}

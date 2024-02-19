@@ -1,0 +1,14 @@
+img {
+    height: 100%;
+    animation: runAnimation 3s linear infinite;
+}
+
+@keyframes runAnimation {
+    0% {
+        transform: translate(-100%,-100%)
+    }
+
+    to {
+        transform: translate(100%,100%)
+    }
+}

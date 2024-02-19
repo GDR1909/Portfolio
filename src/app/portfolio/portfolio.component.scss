@@ -1,0 +1,18 @@
+h2 {
+    font-family: "Syne";
+    font-size: 56px;
+    font-weight: 800;
+    margin: 0;
+    width: fit-content;
+    transition: all ease-in-out 125ms;
+
+    &:hover {
+        color: #FF9900;
+        transition: all ease-in-out 125ms;
+    }
+}
+
+span {
+    font-weight: 400;
+    font-size: 23px;
+}

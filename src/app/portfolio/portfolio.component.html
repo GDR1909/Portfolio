@@ -1,17 +1,22 @@
 <h2>Portfolio</h2>
 
-<span>This page is a sample of my work - please feel free to try them out.</span>
+<span style="margin: 30px 0px">This page is a sample of my work - please feel free to try them out.</span>
 
 <div class="portfolioList">
-    <div *ngFor="let project of projects" class="project">
+    <div *ngFor="let project of projects; let i = index" class="project">
         <img [src]="project.img">
+
+        <div class="counter">{{ (i + 1).toString().padStart(2, '0') }}/{{ projects.length | number:'2.0-0' }}</div>
 
         <div class="projectInfo">
             <h3>{{ project.name }}</h3>
             <span style="color: #FF9900">{{ project.usedTech }}</span>
-            <span>{{ project.description }}</span>
-            <a [href]="project.gitHubURL">GitHub</a>
-            <a [href]="project.liveTestURL">Live Test</a>
+            <span style="font-size: 16px">{{ project.description }}</span>
+
+            <div class="links">
+                <a [href]="project.gitHubURL" target="_blank">GitHub</a>
+                <a [href]="project.liveTestURL" target="_blank">Live Test</a>
+            </div>
         </div>
     </div>
 </div>

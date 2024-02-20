@@ -14,12 +14,35 @@ h2 {
 
 span {
     font-weight: 400;
-    font-size: 23px;
+    font-size: 24px;
+}
+
+.portfolioList {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
 }
 
 .project {
+    height: 460px;
     display: flex;
-    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+
+    &:hover {
+        img {
+            filter: grayscale(0%);
+            transition: all ease-in-out 500ms;
+        }
+
+        .projectInfo {
+            translate: 0%;
+            opacity: 1;
+            transition: all ease-in-out 750ms, opacity 750ms;
+        }
+    }
 }
 
 img {
@@ -27,15 +50,69 @@ img {
     height: 393px;
     padding: 10px 0px 10px 0px;
     object-fit: cover;
-    // filter: grayscale(100%);
+    filter: grayscale(100%);
+    transition: all ease-in-out 500ms;
+}
+
+.counter {
+    font-family: 'Syne';
+    font-weight: 700;
+    font-size: 48px;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 .projectInfo {
     display: flex;
     flex-direction: column;
+    translate: -100%;
+    opacity: 0;
+    transition: all ease-in-out 750ms, opacity 750ms;
 }
 
 h3 {
     font-family: "Syne";
     font-size: 40px;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 30px;
+    border: solid 3px black;
+    background-color: #FFFCF3;
+    font-family: 'Overpass';
+    font-size: 20px;
+    transition: all ease-in-out 125ms;
+
+    &:hover {
+        background-color: #ffecd2;
+        font-weight: bold;
+        transition: all ease-in-out 125ms;
+    }
+
+    @keyframes slideIn {
+        from {
+            translate: -100%;
+            opacity: 0;
+        }
+
+        to {
+            translate: 0%;
+            opacity: 100;
+        }
+    }
 }

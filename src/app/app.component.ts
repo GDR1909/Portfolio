@@ -8,6 +8,7 @@ import { ArrowRightComponent } from './arrow-right/arrow-right.component';
 import { MySkillsComponent } from './my-skills/my-skills.component';
 import { ArrowLeftComponent } from './arrow-left/arrow-left.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
+import { ContactComponent } from './contact/contact.component';
 
 @Component({
   selector: 'app-root',
@@ -21,7 +22,8 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
     ArrowRightComponent,
     MySkillsComponent,
     ArrowLeftComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    ContactComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'

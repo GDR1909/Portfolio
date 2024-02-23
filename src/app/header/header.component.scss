@@ -1,3 +1,11 @@
 img {
     cursor: pointer;
+
+    &:first-child {
+        padding-left: 100px;
+    }
+
+    &:last-child {
+        padding-right: 100px;
+    }
 }

@@ -26,6 +26,8 @@ h2 {
 }
 
 .email {
+    color: black;
+    text-decoration: none;
     font-weight: 300;
     font-size: 23px;
     rotate: 270deg;
@@ -35,7 +37,6 @@ h2 {
     transition: all ease-in-out 125ms;
 
     &:hover {
-        cursor: pointer;
         color: #FF9900;
         transition: all ease-in-out 125ms;
     }
@@ -57,13 +58,14 @@ h2 {
         animation: bounceAnimation 3s infinite;
     }
 
-    span {
+    a {
+        color: black;
+        text-decoration: none;
         font-weight: 300;
         font-size: 23px;
         transition: all ease-in-out 125ms;
     
         &:hover {
-            cursor: pointer;
             color: #FF9900;
             transition: all ease-in-out 125ms;
         }
@@ -83,17 +85,3 @@ h2 {
         transform: translateY(-15px)
     }
 }
-
-// @keyframes reverseBounceAnimation {
-//     0%,20%,50%,80%,to {
-//         transform: translateY(0)
-//     }
-
-//     40% {
-//         transform: translateY(30px)
-//     }
-
-//     60% {
-//         transform: translateY(15px)
-//     }
-// }

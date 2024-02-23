@@ -43,12 +43,20 @@ h4 {
 img {
     position: absolute;
     right: 100px;
-    bottom: 0;
-    transition: all ease-in-out 125ms;
+    bottom: 30px;
+    animation: reverseBounceAnimation 3s infinite;
+}
 
-    &:hover {
-        cursor: pointer;
-        transform: translateY(-20px);
-        transition: all ease-in-out 250ms;
+@keyframes reverseBounceAnimation {
+    0%,20%,50%,80%,to {
+        transform: translateY(0)
+    }
+
+    40% {
+        transform: translateY(30px)
+    }
+
+    60% {
+        transform: translateY(15px)
     }
 }

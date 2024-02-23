@@ -38,12 +38,13 @@ h2 {
 
     img {
         height: 80px;
-        transition: all ease-in-out 125ms;
+        transition: all ease-in-out 250ms;
 
         &:hover {
-            transition: all ease-in-out 125ms;
             transform: translateY(-10px);
-            box-shadow: 0px 0px 30px 0px #FF9900;
+            -webkit-filter: drop-shadow(12px 12px 7px rgba(255,153,0, 0.5));
+             filter: drop-shadow(12px 12px 7px rgba(255,153,0, 0.5));
+            transition: all ease-in-out 250ms;
         }
     }
 }

@@ -67,3 +67,16 @@ app-contact {
     margin-right: -100px;
     position: relative;
 }
+
+app-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    background-color: black;
+    margin-left: -100px;
+    margin-right: -100px;
+    position: relative;
+    gap: 20px;
+}

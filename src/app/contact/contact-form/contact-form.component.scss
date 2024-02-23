@@ -1,0 +1,99 @@
+form {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#name {
+    width: 602px;
+    height: 50px;
+    border: none;
+    border-bottom: 2px solid #FFFCF3;
+    outline: none;
+    padding-left: 15px;
+    padding-right: 15px;
+    gap: 10px;
+    background-color: black;
+    color: #FFFCF3;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+#email {
+    width: 602px;
+    height: 50px;
+    border: none;
+    border-bottom: 2px solid #FFFCF3;
+    outline: none;
+    padding-left: 15px;
+    padding-right: 15px;
+    gap: 10px;
+    background-color: black;
+    color: #FFFCF3;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+#message {
+    width: 602px;
+    height: 202px;
+    border: none;
+    border-bottom: 2px solid #FFFCF3;
+    outline: none;
+    padding-left: 15px;
+    padding-right: 15px;
+    gap: 10px;
+    background-color: black;
+    color: #FFFCF3;
+    font-family: 'Overpass';
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.privacyPolicy {
+    width: 617px;
+    height: 27px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 4px;
+
+    input {
+        width: 18px;
+        height: 18px;
+        cursor: pointer;
+    }
+
+    a {
+        color: #FF9900;
+        text-decoration: none;
+        transition: all ease-in-out 125ms;
+
+        &:hover {
+            display: inline-block;
+            transform: scale(1.05);
+            transition: all ease-in-out 125ms;
+        }
+    }
+}
+
+.submitButton {
+    width: 213px;
+    height: 68px;
+    border: solid 4px #FFFCF3;
+    background-color: black;
+    color: #FFFCF3;
+    font-family: "Overpass";
+    font-size: 20px;
+    transition: all ease-in-out 125ms;
+
+    &:hover {
+        cursor: pointer;
+        font-weight: bold;
+        width: 250px;
+        transition: all ease-in-out 125ms;
+    }
+}

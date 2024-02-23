@@ -40,10 +40,15 @@ h4 {
     margin-bottom: 15px;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 617px;
+img {
+    position: absolute;
+    right: 100px;
+    bottom: 0;
+    transition: all ease-in-out 125ms;
+
+    &:hover {
+        cursor: pointer;
+        transform: translateY(-20px);
+        transition: all ease-in-out 250ms;
+    }
 }

@@ -2,6 +2,8 @@ img {
     cursor: pointer;
 
     &:first-child {
+        width: 75px;
+        height: 30px;
         padding-left: 100px;
     }
 

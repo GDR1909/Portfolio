@@ -1,0 +1,16 @@
+a {
+    width: 580px;
+    height: 167px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+    box-sizing: border-box;
+    transition: all ease-in-out 125ms;
+
+    &:hover {
+        border: solid 4px black;
+        transition: all ease-in-out 125ms;
+    }
+}

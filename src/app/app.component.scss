@@ -9,7 +9,27 @@ app-header {
     align-items: center;
     position: fixed;
     top: 0;
-    z-index: 100;
+    z-index: 10;
+}
+
+app-menu {
+    font-family: 'Syne';
+    font-weight: 700;
+    font-size: 96px;
+    height: 100vh;
+    width: 100%;
+    margin-left: -100px;
+    margin-right: -100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    z-index: 9;
+    background-color: #FFFCF3;
+    transform: translate(100%);
+    animation: slideIn 1s;
 }
 
 app-landingPage {
@@ -81,4 +101,13 @@ app-footer {
     margin-right: -100px;
     position: relative;
     gap: 20px;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translate(100%);
+    }
+    to {
+        transform: translate(0%);
+    }
 }

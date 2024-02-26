@@ -10,6 +10,7 @@ import { ArrowLeftComponent } from './arrow-left/arrow-left.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
+import { MenuComponent } from './menu/menu.component';
 
 @Component({
   selector: 'app-root',
@@ -25,7 +26,8 @@ import { FooterComponent } from './footer/footer.component';
     ArrowLeftComponent,
     PortfolioComponent,
     ContactComponent,
-    FooterComponent
+    FooterComponent,
+    MenuComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'

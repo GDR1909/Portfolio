@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { HeroService } from '../hero.service';
 
 @Component({
   selector: 'app-header',
@@ -9,6 +10,6 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
   openMenu() {
-
+    
   }
 }

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { HeroService } from '../hero.service';
+import { PortfolioService } from '../portfolio.service';
 
 @Component({
   selector: 'app-header',
@@ -9,7 +9,9 @@ import { HeroService } from '../hero.service';
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
+  constructor(private portfolioService: PortfolioService) { }
+
   openMenu() {
-    
+    this.portfolioService.openMenu();
   }
 }

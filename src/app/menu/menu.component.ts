@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { PortfolioService } from '../portfolio.service';
 
 @Component({
   selector: 'app-menu',
@@ -8,5 +9,6 @@ import { Component } from '@angular/core';
   styleUrl: './menu.component.scss'
 })
 export class MenuComponent {
-  
+  constructor(private portfolioService: PortfolioService) { }
+
 }

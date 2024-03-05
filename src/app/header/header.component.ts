@@ -19,7 +19,7 @@ export class HeaderComponent {
   openMenu() {
     this.portfolioService.openMenu();
     this.clickFunction = this.closeMenu.bind(this);
-    
+
     setTimeout(() => {
       this.menuIconSrc = 'assets/img/close.png';
     }, 750);

@@ -42,16 +42,37 @@ span {
             opacity: 1;
             transition: all ease-in-out 750ms, opacity 750ms;
         }
+
+        .imageBorder {
+            opacity: 1;
+            transform: translate(10px, 10px);
+            transition: all ease-in-out 250ms;
+        }
     }
 }
 
-img {
-    width: 620px;
-    height: 393px;
-    padding: 10px 0px 10px 0px;
-    object-fit: cover;
-    filter: grayscale(100%);
-    transition: all ease-in-out 500ms;
+.projectImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    img {
+        width: 620px;
+        height: 393px;
+        object-fit: cover;
+        filter: grayscale(100%);
+        transition: all ease-in-out 500ms;
+    }
+
+    .imageBorder {
+        height: 100%;
+        width: 100%;
+        border: solid 3px black;
+        position: absolute;
+        opacity: 0;
+        transition: all ease-in-out 250ms;
+    }
 }
 
 .counter {
@@ -103,16 +124,22 @@ a {
         font-weight: bold;
         transition: all ease-in-out 125ms;
     }
+}
 
-    @keyframes slideIn {
-        from {
-            translate: -100%;
-            opacity: 0;
-        }
+.row-reverse {
+    flex-direction: row-reverse;
 
-        to {
-            translate: 0%;
-            opacity: 100;
+    .counter {
+        left: 0;
+    }
+
+    .projectInfo {
+        translate: 100%;
+    }
+
+    &:hover {
+        .imageBorder {
+            transform: translate(-10px, 10px);
         }
     }
 }

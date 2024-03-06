@@ -3,8 +3,11 @@
 <span style="margin: 30px 0px">This page is a sample of my work - please feel free to try them out.</span>
 
 <div class="portfolioList">
-    <div *ngFor="let project of projects; let i = index" class="project">
-        <img [src]="project.img">
+    <div *ngFor="let project of projects; let i = index" class="project" [ngClass]="{'row-reverse': i % 2 == 1}">
+        <div class="projectImage">
+            <img [src]="project.img">
+            <div class="imageBorder"></div>
+        </div>
 
         <div class="counter">{{ (i + 1).toString().padStart(2, '0') }}/{{ projects.length | number:'2.0-0' }}</div>
 

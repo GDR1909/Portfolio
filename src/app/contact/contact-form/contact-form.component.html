@@ -1,4 +1,4 @@
-<div class="container">
+<div class="formContainer">
     <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
         <label class="d-none" for="name">Your name</label>
         <input [(ngModel)]="contactData.name" type="text" id="name" name="name" placeholder="Your name" required>

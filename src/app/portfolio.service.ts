@@ -5,6 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class PortfolioService {
   menuIconSrc: string = 'assets/img/menuIcon.png';
+  clickFunction: () => void = this.openMenu.bind(this);
 
 
   constructor() { }
@@ -14,7 +15,12 @@ export class PortfolioService {
     document.getElementById('menu')!.style.transform = 'translateY(0%)';
     document.getElementById('menu')!.style.top = '0%';
     document.getElementById('menu')!.style.transition = 'ease 1s';
-    console.log('open menu works!');
+
+    setTimeout(() => {
+      this.menuIconSrc = 'assets/img/close.png';
+      this.clickFunction = this.closeMenu.bind(this);
+      console.log('open menu works!');
+    }, 750);
   }
 
 
@@ -22,6 +28,11 @@ export class PortfolioService {
     document.getElementById('menu')!.style.transform = 'translateY(-100%)';
     document.getElementById('menu')!.style.top = '-100%';
     document.getElementById('menu')!.style.transition = 'ease 1s';
-    console.log('close menu works!');
+
+    setTimeout(() => {
+      this.menuIconSrc = 'assets/img/menuIcon.png';
+      this.clickFunction = this.openMenu.bind(this);
+      console.log('close menu works!');
+    }, 250);
   }
 }

@@ -14,6 +14,5 @@ export class MenuComponent {
 
   closeMenu() {
     this.portfolioService.closeMenu();
-    this.portfolioService.menuIconSrc;
   }
 }

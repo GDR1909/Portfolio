@@ -9,7 +9,8 @@ import { PortfolioService } from '../portfolio.service';
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
-  menuIconSrc: string = 'assets/img/menuIcon.png';
+  // menuIconSrc: string = 'assets/img/menuIcon.png';
+  menuIconSrc = this.portfolioService.menuIconSrc;
   clickFunction: () => void = this.openMenu.bind(this);
 
 

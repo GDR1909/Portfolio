@@ -7,22 +7,7 @@ form {
     gap: 20px;
 }
 
-#name {
-    width: 602px;
-    height: 50px;
-    border: none;
-    border-bottom: 2px solid #FFFCF3;
-    outline: none;
-    padding-left: 15px;
-    padding-right: 15px;
-    gap: 10px;
-    background-color: black;
-    color: #FFFCF3;
-    font-weight: 400;
-    font-size: 16px;
-}
-
-#email {
+input[type=text],[type=email] {
     width: 602px;
     height: 50px;
     border: none;
@@ -80,7 +65,7 @@ form {
     }
 }
 
-.submitButton {
+input[type=submit] {
     width: 213px;
     height: 68px;
     border: solid 4px #FFFCF3;

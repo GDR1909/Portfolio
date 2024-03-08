@@ -15,7 +15,8 @@ export class ContactFormComponent {
   contactData = {
     name: '',
     email: '',
-    message: ''
+    message: '',
+    privacyPolicy: false
   }
 
   mailTest = true;
@@ -31,12 +32,13 @@ export class ContactFormComponent {
     },
   };
 
+  
   onSubmit(ngForm: NgForm) {
     if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
-
+            // optionial code can be added here
             ngForm.resetForm();
           },
           error: (error) => {
@@ -49,11 +51,4 @@ export class ContactFormComponent {
       ngForm.resetForm();
     }
   }
-
-
-  // onSubmit(ngForm: NgForm) {
-  //   if (ngForm.valid && ngForm.submitted) {
-  //     console.log(this.contactData);
-  //   }
-  // }
 }

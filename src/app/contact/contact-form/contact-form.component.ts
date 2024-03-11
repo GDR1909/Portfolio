@@ -32,6 +32,13 @@ export class ContactFormComponent {
     },
   };
 
+
+  privacyPolicyAccepted(event: any) {
+    const isChecked = event.target.checked;
+    this.contactData.privacyPolicy = isChecked;
+    console.log(this.contactData.privacyPolicy);
+  }
+
   
   onSubmit(ngForm: NgForm) {
     if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
@@ -50,5 +57,10 @@ export class ContactFormComponent {
 
       ngForm.resetForm();
     }
+  }
+
+
+  test() {
+    console.log('Formular wurde gesendet!');
   }
 }

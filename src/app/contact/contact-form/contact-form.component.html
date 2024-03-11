@@ -2,24 +2,27 @@
     <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
         <input #name="ngModel" [(ngModel)]="contactData.name" type="text" id="name" name="name" placeholder="Your name" required>
         @if (!name.valid && name.touched) {
-            <span style="color: red;">Please enter your name</span>
+            <span class="warningText">Please enter your name</span>
         }
 
         <input #email="ngModel" [(ngModel)]="contactData.email" type="email" id="email" name="email" placeholder="Your email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
         @if (!email.valid && email.touched) {
-            <span style="color: red;">Please enter your email</span>
+            <span class="warningText">Please enter your email</span>
         }
 
         <textarea #message="ngModel" min-length="4" [(ngModel)]="contactData.message" id="message" name="message" placeholder="Your message" required></textarea>
         @if (!message.valid && message.touched) {
-            <span style="color: red;">Please enter a message</span>
+            <span class="warningText">Please enter a message</span>
         }
 
         <div class="privacyPolicy">
-            <input type="checkbox" required>
+            <input #check="ngModel" [(ngModel)]="contactData.privacyPolicy" type="checkbox" name="check" (change)="privacyPolicyAccepted($event)" required>
             <span>I've read the <a href="">privacy policy</a> and agree to the processing of my data as outlined.</span>
         </div>
+        @if (!check.valid && check.touched) {
+            <span class="warningText">Please accept the privacy policy</span>
+        }
 
-        <input class="submitButton" type="submit" value="Send message">
+        <input class="submitButton" type="submit" value="Send message" [disabled]="!contactForm.valid || contactForm.submitted" (click)="test()">
     </form>
 </div>

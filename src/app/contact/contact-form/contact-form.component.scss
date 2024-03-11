@@ -73,12 +73,24 @@ input[type=submit] {
     color: #FFFCF3;
     font-family: "Overpass";
     font-size: 20px;
+    cursor: pointer;
     transition: all ease-in-out 125ms;
 
     &:hover {
-        cursor: pointer;
         font-weight: bold;
         width: 250px;
         transition: all ease-in-out 125ms;
     }
+
+    &:disabled {
+        opacity: 0.5;
+        pointer-events: none;
+        cursor: default;
+    }
+}
+
+.warningText {
+    width: 100%;
+    color: red;
+    margin-top: -10px;
 }

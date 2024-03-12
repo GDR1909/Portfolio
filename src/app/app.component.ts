@@ -11,6 +11,8 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { MenuComponent } from './menu/menu.component';
+import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
+import { LegalNoticeComponent } from './legal-notice/legal-notice.component';
 
 @Component({
   selector: 'app-root',
@@ -27,7 +29,9 @@ import { MenuComponent } from './menu/menu.component';
     PortfolioComponent,
     ContactComponent,
     FooterComponent,
-    MenuComponent
+    MenuComponent,
+    PrivacyPolicyComponent,
+    LegalNoticeComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'

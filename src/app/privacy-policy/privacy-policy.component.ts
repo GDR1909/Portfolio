@@ -9,4 +9,8 @@ import { Component } from '@angular/core';
 })
 export class PrivacyPolicyComponent {
 
+
+  doNotClose(event: MouseEvent) {
+    event.stopPropagation();
+  }
 }

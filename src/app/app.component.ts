@@ -13,6 +13,7 @@ import { FooterComponent } from './footer/footer.component';
 import { MenuComponent } from './menu/menu.component';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 import { LegalNoticeComponent } from './legal-notice/legal-notice.component';
+import { PortfolioService } from './portfolio.service';
 
 @Component({
   selector: 'app-root',
@@ -38,4 +39,12 @@ import { LegalNoticeComponent } from './legal-notice/legal-notice.component';
 })
 export class AppComponent {
   title = 'portfolio';
+
+
+  constructor(private portfolioService: PortfolioService) { }
+
+
+  closePopUp() {
+    document.getElementById('privacyPolicy')!.style.display = 'none';
+  }
 }

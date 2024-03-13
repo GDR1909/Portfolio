@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
+import { PortfolioService } from '../../portfolio.service';
 
 @Component({
   selector: 'app-contact-form',
@@ -33,6 +34,9 @@ export class ContactFormComponent {
   };
 
 
+  constructor(private portfolioService: PortfolioService) { }
+
+
   privacyPolicyAccepted(event: any) {
     const isChecked = event.target.checked;
     this.contactData.privacyPolicy = isChecked;
@@ -62,5 +66,10 @@ export class ContactFormComponent {
 
   test() {
     console.log('Formular wurde gesendet!');
+  }
+
+
+  openPrivacyPolicy() {
+    this.portfolioService.openPrivacyPolicy();
   }
 }

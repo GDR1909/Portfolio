@@ -17,7 +17,7 @@
 
         <div class="privacyPolicy">
             <input #check="ngModel" [(ngModel)]="contactData.privacyPolicy" type="checkbox" name="check" (change)="privacyPolicyAccepted($event)" required>
-            <span>I've read the <a href="">privacy policy</a> and agree to the processing of my data as outlined.</span>
+            <span>I've read the <a (click)="openPrivacyPolicy()">privacy policy</a> and agree to the processing of my data as outlined.</span>
         </div>
         @if (!check.valid && check.touched) {
             <span class="warningText">Please accept the privacy policy</span>

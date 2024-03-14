@@ -40,4 +40,9 @@ export class PortfolioService {
   openPrivacyPolicy() {
     document.getElementById('privacyPolicy')!.style.display = 'flex';
   }
+
+
+  openLegalNotice() {
+    document.getElementById('legalNotice')!.style.display = 'flex';
+  }
 }

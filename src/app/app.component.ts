@@ -44,7 +44,7 @@ export class AppComponent {
   constructor(private portfolioService: PortfolioService) { }
 
 
-  closePopUp() {
-    document.getElementById('privacyPolicy')!.style.display = 'none';
+  closePopUp(id: string) {
+    document.getElementById(id)!.style.display = 'none';
   }
 }

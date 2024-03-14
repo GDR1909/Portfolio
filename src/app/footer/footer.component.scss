@@ -57,6 +57,7 @@ a {
     transition: all ease-in-out 125ms;
 
     &:hover {
+        cursor: pointer;
         color: #FF9900;
         transition: all ease-in-out 125ms;
     }

@@ -8,8 +8,6 @@ import { Component } from '@angular/core';
   styleUrl: './legal-notice.component.scss'
 })
 export class LegalNoticeComponent {
-
-
   doNotClose(event: MouseEvent) {
     event.stopPropagation();
   }

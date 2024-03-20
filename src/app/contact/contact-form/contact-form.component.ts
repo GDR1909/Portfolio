@@ -23,7 +23,7 @@ export class ContactFormComponent {
   mailTest = true;
 
   post = {
-    endPoint: 'https://deineDomain.de/sendMail.php',
+    endPoint: 'https://davide-religioso.com/sendMail.php',  // 'https://deineDomain.de/sendMail.php'
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {

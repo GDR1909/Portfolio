@@ -11,51 +11,51 @@ import { Component } from '@angular/core';
 export class MySkillsComponent {
   skills = [
     {
-      'icon': '/assets/skillIcons/angular.png',
+      'icon': 'assets/skillIcons/angular.png',
       'name': 'Angular'
     },
     {
-      'icon': '/assets/skillIcons/typescript.png',
+      'icon': 'assets/skillIcons/typescript.png',
       'name': 'TypeScript'
     },
     {
-      'icon': '/assets/skillIcons/javascript.png',
+      'icon': 'assets/skillIcons/javascript.png',
       'name': 'JavaScript'
     },
     {
-      'icon': '/assets/skillIcons/html.png',
+      'icon': 'assets/skillIcons/html.png',
       'name': 'HTML'
     },
     {
-      'icon': '/assets/skillIcons/css.png',
+      'icon': 'assets/skillIcons/css.png',
       'name': 'CSS'
     },
     {
-      'icon': '/assets/skillIcons/firebase.png',
+      'icon': 'assets/skillIcons/firebase.png',
       'name': 'Firebase'
     },
     {
-      'icon': '/assets/skillIcons/git.png',
+      'icon': 'assets/skillIcons/git.png',
       'name': 'Git'
     },
     {
-      'icon': '/assets/skillIcons/scrum.png',
+      'icon': 'assets/skillIcons/scrum.png',
       'name': 'Scrum'
     },
     {
-      'icon': '/assets/skillIcons/api.png',
+      'icon': 'assets/skillIcons/api.png',
       'name': 'Rest-API'
     },
     {
-      'icon': '/assets/skillIcons/materialDesign.png',
+      'icon': 'assets/skillIcons/materialDesign.png',
       'name': 'Material Design'
     },
     {
-      'icon': '/assets/skillIcons/scss.png',
+      'icon': 'assets/skillIcons/scss.png',
       'name': 'SCSS'
     },
     {
-      'icon': '/assets/skillIcons/wordpress.png',
+      'icon': 'assets/skillIcons/wordpress.png',
       'name': 'WordPress'
     }
   ];

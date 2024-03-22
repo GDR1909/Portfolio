@@ -2,4 +2,8 @@
     <img src="assets/img/logo.png">
 </a>
 
-<img [src]="this.portfolioService.menuIconSrc" (click)="this.portfolioService.clickFunction()">
+<div class="changeLanguageAndMenu">
+    <app-change-language></app-change-language>
+
+    <img [src]="this.portfolioService.menuIconSrc" (click)="this.portfolioService.clickFunction()">
+</div>

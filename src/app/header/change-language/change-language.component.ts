@@ -37,7 +37,7 @@ export class ChangeLanguageComponent {
     if (this.changeLanguageDropdownMenuIsOpen) {
       this.clickFunction = this.openDropdown.bind(this);
       document.getElementById('languageList')!.style.display = 'none';
-      document.getElementById('changeLanguageBtn')!.style.border = 'solid 2px transparent';
+      document.getElementById('changeLanguageBtn')!.style.border = 'solid 2px black';
       this.changeLanguageDropdownMenuIsOpen = false;
       console.log(this.changeLanguageDropdownMenuIsOpen);
     }

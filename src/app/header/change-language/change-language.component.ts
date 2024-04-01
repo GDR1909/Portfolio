@@ -10,8 +10,8 @@ import { Component } from '@angular/core';
 })
 export class ChangeLanguageComponent {
   changeLanguageDropdownMenuIsOpen = false;
-  selectedLanguage: string = 'DEU';
-  languages = ['DEU', 'ENG', 'ITA'];
+  selectedLanguage: string = 'ENG';
+  languages = ['ENG', 'DEU', 'ITA'];
   clickFunction: () => void = this.openDropdown.bind(this);
 
 

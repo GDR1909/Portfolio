@@ -14,6 +14,14 @@ import { MenuComponent } from './menu/menu.component';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 import { LegalNoticeComponent } from './legal-notice/legal-notice.component';
 import { PortfolioService } from './portfolio.service';
+import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { HttpClient } from '@angular/common/http';
+
+
+export function HttpLoaderFactory(httpClient: HttpClient) {
+  return new TranslateHttpLoader(httpClient);
+}
 
 @Component({
   selector: 'app-root',
@@ -32,7 +40,8 @@ import { PortfolioService } from './portfolio.service';
     FooterComponent,
     MenuComponent,
     PrivacyPolicyComponent,
-    LegalNoticeComponent
+    LegalNoticeComponent,
+    TranslateModule
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'

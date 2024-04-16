@@ -1,3 +1,8 @@
 {
-    "frontend developer": "Frontend Developer"
+    "frontendDeveloper": "Frontend Developer",
+    "scrollDown": "Scroll\nDown",
+
+    "aboutMe": "About me",
+    "mySkills": "My skills",
+    "portfolio": "Portfolio"
 }

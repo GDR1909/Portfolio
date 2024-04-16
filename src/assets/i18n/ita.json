@@ -1,3 +1,8 @@
 {
-    "frontend developer": "Sviluppatore Frontend"
+    "frontendDeveloper": "Sviluppatore Frontend",
+    "scrollDown": "Scorri\nGiù",
+
+    "aboutMe": "Su di me",
+    "mySkills": "Mie competenze",
+    "portfolio": "Portfolio"
 }

@@ -4,5 +4,12 @@
 
     "aboutMe": "Su di me",
     "mySkills": "Mie competenze",
-    "portfolio": "Portfolio"
+    "portfolio": "Portfolio",
+
+    "aboutMeText": "Ciao! Mi chiamo Davide Religioso e sono un sviluppatore frontend di Stoccarda, in Germania. Sono sempre stato affascinato dalle innovazioni tecnologiche. Ora, sono desideroso di incorporare questa passione nella mia vita professionale.\n\nPiù di un anno fa, ho deciso di intraprendere ulteriori studi nello sviluppo frontend. La Developer Academy mi ha supportato lungo questo percorso e mi ha fornito un'assistenza preziosa nel realizzare i miei obiettivi.\n\nPrima di dedicarmi allo sviluppo frontend, ho lavorato come fresatore CNC. In questo ruolo, la precisione e il rispetto delle specifiche erano fondamentali. Questa esperienza ha affinato le mie competenze nel lavoro meticoloso e nell'attenzione ai dettagli. Ora, mirò a sfruttare queste competenze trasferibili nella programmazione, rendendomi ben adatto a assumere una posizione in questo settore.",
+
+    "portfolioText": "Ecco degli esempi del mio lavoro - sentiti libero di provarli.",
+
+    "contactH3": "Vuoi discutere un nuovo progetto?",
+    "contactH4": "Discutiamo delle tue idee e realizziamole."
 }

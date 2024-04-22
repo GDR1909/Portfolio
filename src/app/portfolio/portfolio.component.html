@@ -14,7 +14,7 @@
         <div class="projectInfo">
             <h3>{{ project.name }}</h3>
             <span style="color: #FF9900">{{ project.usedTech }}</span>
-            <span style="font-size: 16px">{{ project.description }}</span>
+            <span style="font-size: 16px">{{ project.description | translate }}</span> <!-- problem -->
 
             <div class="links">
                 <a [href]="project.gitHubURL" target="_blank">GitHub</a>

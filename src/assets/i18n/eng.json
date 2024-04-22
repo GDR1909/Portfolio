@@ -9,7 +9,26 @@
     "aboutMeText": "Hello! My name is Davide Religioso, and I'm a frontend developer from Stuttgart, Germany. I've always been fascinated by technological innovations. Now, I'm eager to incorporate this passion into my professional life.\n\nOver a year ago, I decided to pursue further education in frontend development. The Developer Academy supported me throughout this journey and provided invaluable assistance in realizing my goals.\n\nBefore transitioning into frontend development, I worked as a CNC miller. In this role, precision and adherence to specifications were paramount. This experience honed my skills in meticulous work and attention to detail. Now, I aim to leverage these transferable skills in programming, making me well-suited to take on a position in the field.",
 
     "portfolioText": "This page is a sample of my work - please feel free to try them out.",
+    "projectDescription": "A simple Jump-and-Run game based on an object-oriented approach. Help Pepe Peligroso collecting coins and salsa bottles and to fight against el pollo loco.",
 
     "contactH3": "Want to discuss a new project?",
-    "contactH4": "Say hello! Let's discuss your ideas and make it happen."
+    "contactH4": "Say hello! Let's discuss your ideas and make it happen.",
+
+    "inputNamePlaceholder": "Your name",
+    "warningTextName": "Please enter your name",
+
+    "inputEmailPlaceholder": "Your email",
+    "warningTextEmail": "Please enter your email",
+
+    "textareaMessagePlaceholder": "Your message",
+    "warningTextMessage": "Please enter a message",
+
+    "privacyPolicyNotice-I'veReadThe": "I've read the",
+    "privacyPolicyLink": "privacy policy",
+    "privacyPolicyNotice-and agree...": "and agree to the processing of my data as outlined.",
+    "warningTextPrivacyPolicy": "Please accept the privacy policy",
+
+    "submitButtonValue": "Send message",
+
+    "legalNotice": "Legal notice"
 }

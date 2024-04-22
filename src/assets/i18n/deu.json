@@ -9,7 +9,26 @@
     "aboutMeText": "Hallo! Mein Name ist Davide Religioso und ich bin ein Frontend-Entwickler aus Stuttgart, Deutschland. Ich war schon immer fasziniert von technologischen Innovationen. Jetzt bin ich darauf erpicht, diese Leidenschaft in mein berufliches Leben einzubinden.\n\nVor über einem Jahr beschloss ich, eine weitere Ausbildung im Bereich Frontend-Entwicklung zu verfolgen. Die Developer Academy unterstützte mich während dieser Reise und bot mir unschätzbare Hilfe bei der Verwirklichung meiner Ziele.\n\nBevor ich mich der Frontend-Entwicklung zuwandte, arbeitete ich als CNC-Fräser. In dieser Rolle waren Präzision und Einhaltung von Spezifikationen von größter Bedeutung. Diese Erfahrung hat meine Fähigkeiten in akribischer Arbeit und Aufmerksamkeit für Details geschärft. Jetzt plane ich, diese übertragbaren Fähigkeiten in der Programmierung zu nutzen, was mich gut geeignet macht, eine Position in diesem Bereich zu übernehmen.",
 
     "portfolioText": "Hier sind Beispiele meiner Arbeit - gerne können Sie sie ausprobieren.",
+    "projectDescription": "Ein einfaches Jump-and-Run-Spiel, das auf einem objektorientierten Ansatz basiert. Hilf Pepe Peligroso dabei, Münzen und Salsaflaschen einzusammeln und gegen El Pollo Loco zu kämpfen.",
 
     "contactH3": "Möchten Sie ein neues Projekt besprechen?",
-    "contactH4": "Lassen Sie uns Ihre Ideen besprechen und verwirklichen."
+    "contactH4": "Lassen Sie uns Ihre Ideen besprechen und verwirklichen.",
+
+    "inputNamePlaceholder": "Dein Name",
+    "warningTextName": "Bitte geben Sie Ihren Namen ein",
+
+    "inputEmailPlaceholder": "Deine E-Mail-Adresse",
+    "warningTextEmail": "Bitte geben Sie ihre E-Mail-Adresse ein",
+
+    "textareaMessagePlaceholder": "Deine Nachricht",
+    "warningTextMessage": "Bitte geben Sie eine Nachricht ein",
+
+    "privacyPolicyNotice-I'veReadThe": "Ich habe die",
+    "privacyPolicyLink": "Datenschutzerklärung",
+    "privacyPolicyNotice-and agree...": "gelesen und bin mit der beschriebenen Verarbeitung meiner Daten einverstanden.",
+    "warningTextPrivacyPolicy": "Bitte akzeptieren Sie die Datenschutzerklärung",
+
+    "submitButtonValue": "Nachricht senden",
+
+    "legalNotice": "Impressum"
 }

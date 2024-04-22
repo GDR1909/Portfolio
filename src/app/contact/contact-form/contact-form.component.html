@@ -1,28 +1,28 @@
 <div class="formContainer">
     <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
-        <input #name="ngModel" [(ngModel)]="contactData.name" type="text" id="name" name="name" placeholder="Your name" required>
+        <input #name="ngModel" [(ngModel)]="contactData.name" type="text" id="name" name="name" [placeholder]=" 'inputNamePlaceholder' | translate " required>
         @if (!name.valid && name.touched) {
-            <span class="warningText">Please enter your name</span>
+            <span class="warningText">{{ "warningTextName" | translate }}</span>
         }
 
-        <input #email="ngModel" [(ngModel)]="contactData.email" type="email" id="email" name="email" placeholder="Your email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
+        <input #email="ngModel" [(ngModel)]="contactData.email" type="email" id="email" name="email" [placeholder]=" 'inputEmailPlaceholder' | translate " required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
         @if (!email.valid && email.touched) {
-            <span class="warningText">Please enter your email</span>
+            <span class="warningText">{{ "warningTextEmail" | translate }}</span>
         }
 
-        <textarea #message="ngModel" min-length="4" [(ngModel)]="contactData.message" id="message" name="message" placeholder="Your message" required></textarea>
+        <textarea #message="ngModel" min-length="4" [(ngModel)]="contactData.message" id="message" name="message" [placeholder]=" 'textareaMessagePlaceholder' | translate " required></textarea>
         @if (!message.valid && message.touched) {
-            <span class="warningText">Please enter a message</span>
+            <span class="warningText">{{ "warningTextMessage" | translate }}</span>
         }
 
         <div class="privacyPolicy">
             <input #check="ngModel" [(ngModel)]="contactData.privacyPolicy" type="checkbox" name="check" (change)="privacyPolicyAccepted($event)" required>
-            <span>I've read the <a (click)="openPrivacyPolicy()">privacy policy</a> and agree to the processing of my data as outlined.</span>
+            <span>{{ "privacyPolicyNotice-I'veReadThe" | translate }} <a (click)="openPrivacyPolicy()">{{ "privacyPolicyLink" | translate }}</a> {{ "privacyPolicyNotice-and agree..." | translate }}</span>
         </div>
         @if (!check.valid && check.touched) {
-            <span class="warningText">Please accept the privacy policy</span>
+            <span class="warningText">{{ "warningTextPrivacyPolicy" | translate }}</span>
         }
 
-        <input class="submitButton" type="submit" value="Send message" [disabled]="!contactForm.valid || contactForm.submitted" (click)="test()">
+        <input class="submitButton" type="submit" [value]=" 'submitButtonValue' | translate " [disabled]="!contactForm.valid || contactForm.submitted" (click)="test()">
     </form>
 </div>

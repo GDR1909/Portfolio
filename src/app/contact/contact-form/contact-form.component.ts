@@ -21,7 +21,7 @@ export class ContactFormComponent {
     privacyPolicy: false
   }
 
-  mailTest = true;
+  mailTest = false;
 
   post = {
     endPoint: 'https://davide-religioso.com/sendMail.php',  // 'https://deineDomain.de/sendMail.php'

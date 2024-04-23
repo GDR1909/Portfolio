@@ -11,6 +11,12 @@
     "portfolioText": "Hier sind Beispiele meiner Arbeit - gerne können Sie sie ausprobieren.",
     "projectDescription": "Ein einfaches Jump-and-Run-Spiel, das auf einem objektorientierten Ansatz basiert. Hilf Pepe Peligroso dabei, Münzen und Salsaflaschen einzusammeln und gegen El Pollo Loco zu kämpfen.",
 
+    "descriptionKey": {
+        "elPolloLoco": "Ein einfaches Jump-and-Run-Spiel, das auf einem objektorientierten Ansatz basiert. Hilf Pepe Peligroso, Münzen und Salsaflaschen zu sammeln und gegen el pollo loco zu kämpfen.",
+        "pokedex": "Basierend auf der PokéAPI eine einfache Bibliothek, die Pokemon-Informationen bereitstellt und katalogisiert.",
+        "join": "Aufgabenmanager nach dem Vorbild des Kanban-Systems. Erstellen und organisieren Sie Aufgaben mit Hilfe von Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu."
+    },
+
     "contactH3": "Möchten Sie ein neues Projekt besprechen?",
     "contactH4": "Lassen Sie uns Ihre Ideen besprechen und verwirklichen.",
 

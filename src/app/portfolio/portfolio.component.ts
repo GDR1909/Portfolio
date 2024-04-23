@@ -18,7 +18,7 @@ export class PortfolioComponent {
       'img': 'assets/portfolioImg/elPolloLoco.png',
       'name': 'El Pollo Loco',
       'usedTech': 'JavaScript | HTML | CSS | OOP',
-      'description': 'A simple Jump-and-Run game based on an object-oriented approach. Help Pepe Peligroso collecting coins and salsa bottles and to fight against el pollo loco.',
+      'description': 'descriptionKey.elPolloLoco',
       'gitHubURL': 'https://github.com/GDR1909/El_Pollo_Loco',
       'liveTestURL': ''
     },
@@ -26,7 +26,7 @@ export class PortfolioComponent {
       'img': 'assets/portfolioImg/pokedex.png',
       'name': 'Pokédex',
       'usedTech': 'JavaScript | HTML | CSS | API',
-      'description': 'Based on the PokéAPI a simple library that provides and catalogues pokemon information.',
+      'description': 'descriptionKey.pokedex',
       'gitHubURL': 'https://github.com/GDR1909/Pokedex',
       'liveTestURL': ''
     },
@@ -34,7 +34,7 @@ export class PortfolioComponent {
       'img': 'assets/portfolioImg/join.png',
       'name': 'Join',
       'usedTech': 'JavaScript | HTML | CSS',
-      'description': 'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
+      'description': 'descriptionKey.join',
       'gitHubURL': 'https://github.com/GDR1909/Join',
       'liveTestURL': ''
     }

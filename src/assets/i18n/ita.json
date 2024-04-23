@@ -11,6 +11,12 @@
     "portfolioText": "Ecco degli esempi del mio lavoro - sentiti libero di provarli.",
     "projectDescription": "Un semplice gioco salta e corri basato su un approccio orientato agli oggetti. Aiuta Pepe Peligroso a raccogliere monete e bottiglie di salsa e a combattere contro el pollo loco.",
 
+    "descriptionKey": {
+        "elPolloLoco": "Un semplice gioco Jump-and-Run basato su un approccio orientato agli oggetti. Aiutate Pepe Peligroso a raccogliere monete e bottiglie di salsa e a combattere contro el pollo loco.",
+        "pokedex": "Basato sulla PokéAPI, una semplice libreria che fornisce e cataloga informazioni sui Pokemon.",
+        "join": "Task manager ispirato al sistema Kanban. Crea e organizza le attività utilizzando le funzioni di trascinamento, assegna utenti e categorie."
+    },
+
     "contactH3": "Vuoi discutere un nuovo progetto?",
     "contactH4": "Discutiamo delle tue idee e realizziamole.",
 
@@ -30,5 +36,5 @@
 
     "submitButtonValue": "Invia messaggio",
 
-    "legalNotice": "Imprint"
+    "legalNotice": "Impronta"
 }

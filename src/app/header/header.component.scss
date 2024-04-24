@@ -1,23 +1,12 @@
 a {
     width: 75px;
     height: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin-left: 100px;
-}
 
-img {
-    cursor: pointer;
-
-    &:first-child {
+    img {
         width: 75px;
         height: 30px;
-        margin-left: 100px;
-    }
-
-    &:last-child {
-        margin-right: 100px;
+        cursor: pointer;
     }
 }
 
@@ -25,4 +14,24 @@ img {
     display: flex;
     align-items: center;
     gap: 50px;
+    margin-right: 100px;
+}
+
+.menuIcon {
+    width: 44px;
+    height: 38px;
+    cursor: pointer;
+}
+
+
+/* Responsiveness */
+@media screen and (max-width: 1000px) {
+    a {
+        margin-left: 25px;
+    }
+
+    .changeLanguageAndMenu {
+        gap: 25px;
+        margin-right: 25px;
+    }
 }

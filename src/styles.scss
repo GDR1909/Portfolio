@@ -18,6 +18,16 @@ body {
     visibility: hidden;
 }
 
+
+/* Responsiveness */
+@media screen and (max-width: 1000px) {
+    body {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}
+
+
 /* syne-regular - greek_latin_latin-ext */
 @font-face {
     font-display: swap;

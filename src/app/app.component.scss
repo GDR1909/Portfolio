@@ -141,3 +141,12 @@ app-legal-notice {
         opacity: 1;
     }
 }
+
+
+/* Responsiveness */
+@media screen and (max-width: 1000px) {
+    app-header {
+        margin-left: -25px;
+        margin-right: -25px;
+    }
+}

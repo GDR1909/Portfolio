@@ -87,3 +87,26 @@ h2 {
         transform: translateY(-15px)
     }
 }
+
+
+/* Responsiveness */
+@media screen and (max-width: 1135px) {
+    .borderline {
+        width: 450px;
+    }
+}
+
+
+@media screen and (max-width: 1080px) {
+    h1 {
+        font-size: 80px;
+    }
+
+    .borderline {
+        width: 310px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+}

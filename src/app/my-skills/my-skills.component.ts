@@ -58,9 +58,9 @@ export class MySkillsComponent {
       'icon': 'assets/skillIcons/scss.png',
       'name': 'SCSS'
     },
-    {
-      'icon': 'assets/skillIcons/wordpress.png',
-      'name': 'WordPress'
-    }
+    // {
+    //   'icon': 'assets/skillIcons/wordpress.png',
+    //   'name': 'WordPress'
+    // }
   ];
 }

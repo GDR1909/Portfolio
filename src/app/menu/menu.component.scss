@@ -14,3 +14,31 @@ a {
         transition: all ease-in-out 125ms;
     }
 }
+
+
+/* Responsiveness */
+@media screen and (max-width: 1000px) {
+    a {
+        font-size: 80px;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    a {
+        font-size: 50px;
+        height: 80px;
+        min-width: fit-content;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    a {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    a {
+        font-size: 29px;
+    }
+}

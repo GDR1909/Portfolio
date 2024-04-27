@@ -4,6 +4,8 @@ h1 {
     font-weight: 800;
     font-size: 128px;
     text-align: center;
+    display: inline-block;
+    width: min-content;
 }
 
 .borderlineAndName {
@@ -32,8 +34,8 @@ h2 {
     font-size: 23px;
     rotate: 270deg;
     position: absolute;
-    left: -27px;
-    bottom: 150px;
+    left: -11px;
+    bottom: 125px;
     transition: all ease-in-out 125ms;
 
     &:hover {
@@ -66,7 +68,7 @@ h2 {
         white-space: pre;
         text-align: center;
         transition: all ease-in-out 125ms;
-    
+
         &:hover {
             color: #FF9900;
             transition: all ease-in-out 125ms;
@@ -74,8 +76,37 @@ h2 {
     }
 }
 
+.sendAMessageButton {
+    color: black;
+    text-decoration: none;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 213px;
+    height: 68px;
+    border: solid 4px black;
+    background-color: #FFFCF3;
+    font-family: 'Overpass';
+    font-size: 20px;
+    margin-top: 70px;
+    transition: all ease-in-out 125ms;
+
+    &:hover {
+        cursor: pointer;
+        background-color: #ffecd2;
+        font-weight: bold;
+        width: 250px;
+        transition: all ease-in-out 125ms;
+    }
+}
+
 @keyframes bounceAnimation {
-    0%,20%,50%,80%,to {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    to {
         transform: translateY(0)
     }
 
@@ -90,12 +121,19 @@ h2 {
 
 
 /* Responsiveness */
-@media screen and (max-width: 1135px) {
+@media screen and (max-width: 1300px) {
+    h1 {
+        font-size: 100px;
+    }
+
     .borderline {
         width: 450px;
     }
-}
 
+    h2 {
+        font-size: 39px;
+    }
+}
 
 @media screen and (max-width: 1080px) {
     h1 {
@@ -108,5 +146,57 @@ h2 {
 
     h2 {
         font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .email {
+        left: -89px;
+    }
+
+    .scrollDownDiv {
+        right: 23px;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    h1 {
+        font-size: 45px;
+    }
+
+    .borderlineAndName {
+        gap: 10px;
+    }
+
+    .borderline {
+        width: 150px;
+    }
+
+    h2 {
+        font-size: 23px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .sendAMessageButton {
+        display: flex;
+    }
+
+    .email {
+        display: none;
+    }
+
+    .scrollDownDiv {
+        right: 0;
+        left: 0;
+
+        a {
+            font-size: 16px;
+        }
+
+        img {
+            height: 50px;
+            width: 30px;
+        }
     }
 }

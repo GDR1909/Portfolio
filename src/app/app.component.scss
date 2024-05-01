@@ -40,7 +40,7 @@ app-my-skills {
     display: flex;
     justify-content: center;
     border: 4px solid black;
-    margin-top: 34px;
+    position: relative;
 }
 
 app-arrow-left {
@@ -154,5 +154,20 @@ app-legal-notice {
         margin-left: -25px;
         margin-right: -25px;
         gap: 30px;
+    }
+
+    app-arrow-right {
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    app-about-me {
+        height: auto;
+    }
+
+    app-arrow-right {
+        height: 125px;
+        justify-content: center;
     }
 }

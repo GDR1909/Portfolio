@@ -1,7 +1,7 @@
 <h2>{{ "mySkills" | translate }}</h2>
 
 <div class="iconsList">
-    <div *ngFor="let skill of skills">
+    <div *ngFor="let skill of skills" class="skillDiv">
         <img [src]="skill.icon">
         <span> <b> {{ skill.name }} </b> </span>
     </div>

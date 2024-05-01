@@ -6,7 +6,9 @@ h2 {
     height: fit-content;
     width: fit-content;
     margin-top: -39px;
-    padding: 0px 10px 10px 10px;
+    position: absolute;
+    top: 0;
+    padding: 0px 10px 0px 10px;
     background-color: #FFFCF3;
     transition: all ease-in-out 125ms;
 
@@ -17,23 +19,19 @@ h2 {
 }
 
 .iconsList {
-    position: absolute;
-    height: calc(100vh - 126px);
-    width: calc(100% - 208px);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 5px;
+    gap: 15px;
 
-    div {
+    .skillDiv {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 15px;
-        height: 150px;
-        width: 150px;
+        width: 120px;
     }
 
     img {
@@ -42,9 +40,103 @@ h2 {
 
         &:hover {
             transform: translateY(-10px);
-            -webkit-filter: drop-shadow(12px 12px 7px rgba(255,153,0, 0.5));
-             filter: drop-shadow(12px 12px 7px rgba(255,153,0, 0.5));
+            -webkit-filter: drop-shadow(12px 12px 7px rgba(255, 153, 0, 0.5));
+            filter: drop-shadow(12px 12px 7px rgba(255, 153, 0, 0.5));
             transition: all ease-in-out 250ms;
         }
+    }
+}
+
+
+/* Responsiveness */
+@media screen and (max-width: 1135px) {
+    h2 {
+        font-size: 50px;
+        margin-top: -36px;
+    }
+}
+
+@media screen and (max-width: 1035px) {
+    h2 {
+        font-size: 45px;
+        margin-top: -33px;
+    }
+}
+
+@media screen and (max-width: 805px) {
+    h2 {
+        font-size: 40px;
+        margin-top: -30px;
+    }
+}
+
+@media screen and (max-width: 727px) {
+    h2 {
+        font-size: 35px;
+        margin-top: -27px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .iconsList {
+        gap: 10px;
+    }
+
+    .skillDiv {
+        width: 105px !important;
+        gap: 10px !important;
+
+        img {
+            height: 60px !important;
+        }
+
+        span {
+            font-size: 14px
+        };
+    }
+}
+
+@media screen and (max-width: 648px) {
+    h2 {
+        font-size: 30px;
+        margin-top: -24px;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    h2 {
+        font-size: 25px;
+        margin-top: -21px;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    h2 {
+        font-size: 20px;
+        margin-top: -18px;
+    }
+
+    .iconsList {
+        gap: 5px;
+    }
+
+    .skillDiv {
+        width: 105px !important;
+        gap: 10px !important;
+
+        img {
+            height: 50px !important;
+        }
+
+        span {
+            font-size: 12px
+        };
+    }
+}
+
+@media screen and (max-width: 411px) {
+    h2 {
+        font-size: 15px;
+        margin-top: -15px;
     }
 }

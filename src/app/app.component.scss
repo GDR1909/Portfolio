@@ -159,6 +159,10 @@ app-legal-notice {
     app-arrow-right {
         height: 150px;
     }
+
+    app-arrow-left {
+        height: 150px;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -167,6 +171,11 @@ app-legal-notice {
     }
 
     app-arrow-right {
+        height: 125px;
+        justify-content: center;
+    }
+
+    app-arrow-left {
         height: 125px;
         justify-content: center;
     }

@@ -20,7 +20,7 @@ export class PortfolioComponent {
       'usedTech': 'JavaScript | HTML | CSS | OOP',
       'description': 'descriptionKey.elPolloLoco',
       'gitHubURL': 'https://github.com/GDR1909/El_Pollo_Loco',
-      'liveTestURL': ''
+      'liveTestURL': 'https://davide-religioso.com/El_Pollo_Loco/index.html'
     },
     {
       'img': 'assets/portfolioImg/pokedex.png',
@@ -28,7 +28,7 @@ export class PortfolioComponent {
       'usedTech': 'JavaScript | HTML | CSS | API',
       'description': 'descriptionKey.pokedex',
       'gitHubURL': 'https://github.com/GDR1909/Pokedex',
-      'liveTestURL': ''
+      'liveTestURL': 'https://davide-religioso.com/Pokedex/index.html'
     },
     {
       'img': 'assets/portfolioImg/join.png',
@@ -36,7 +36,7 @@ export class PortfolioComponent {
       'usedTech': 'JavaScript | HTML | CSS',
       'description': 'descriptionKey.join',
       'gitHubURL': 'https://github.com/GDR1909/Join',
-      'liveTestURL': ''
+      'liveTestURL': 'https://davide-religioso.com/Join/html/login.html'
     }
   ];
 }

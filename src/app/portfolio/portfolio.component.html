@@ -1,6 +1,6 @@
 <h2>Portfolio</h2>
 
-<span style="margin: 30px 0px">{{ "portfolioText" | translate }}</span>
+<span class="portfolioText" style="margin: 30px 0px">{{ "portfolioText" | translate }}</span>
 
 <div class="portfolioList">
     <div *ngFor="let project of projects; let i = index" class="project" [ngClass]="{'row-reverse': i % 2 == 1}">

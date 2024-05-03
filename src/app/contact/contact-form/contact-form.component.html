@@ -1,28 +1,33 @@
-<div class="formContainer">
-    <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
-        <input #name="ngModel" [(ngModel)]="contactData.name" type="text" id="name" name="name" [placeholder]=" 'inputNamePlaceholder' | translate " required>
-        @if (!name.valid && name.touched) {
-            <span class="warningText">{{ "warningTextName" | translate }}</span>
-        }
+<form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
+    <input #name="ngModel" [(ngModel)]="contactData.name" type="text" id="name" name="name"
+        [placeholder]=" 'inputNamePlaceholder' | translate " required>
+    @if (!name.valid && name.touched) {
+    <span class="warningText">{{ "warningTextName" | translate }}</span>
+    }
 
-        <input #email="ngModel" [(ngModel)]="contactData.email" type="email" id="email" name="email" [placeholder]=" 'inputEmailPlaceholder' | translate " required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
-        @if (!email.valid && email.touched) {
-            <span class="warningText">{{ "warningTextEmail" | translate }}</span>
-        }
+    <input #email="ngModel" [(ngModel)]="contactData.email" type="email" id="email" name="email"
+        [placeholder]=" 'inputEmailPlaceholder' | translate " required
+        pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}">
+    @if (!email.valid && email.touched) {
+    <span class="warningText">{{ "warningTextEmail" | translate }}</span>
+    }
 
-        <textarea #message="ngModel" min-length="4" [(ngModel)]="contactData.message" id="message" name="message" [placeholder]=" 'textareaMessagePlaceholder' | translate " required></textarea>
-        @if (!message.valid && message.touched) {
-            <span class="warningText">{{ "warningTextMessage" | translate }}</span>
-        }
+    <textarea #message="ngModel" min-length="4" [(ngModel)]="contactData.message" id="message" name="message"
+        [placeholder]=" 'textareaMessagePlaceholder' | translate " required></textarea>
+    @if (!message.valid && message.touched) {
+    <span class="warningText">{{ "warningTextMessage" | translate }}</span>
+    }
 
-        <div class="privacyPolicy">
-            <input #check="ngModel" [(ngModel)]="contactData.privacyPolicy" type="checkbox" name="check" (change)="privacyPolicyAccepted($event)" required>
-            <span>{{ "privacyPolicyNotice-I'veReadThe" | translate }} <a (click)="openPrivacyPolicy()">{{ "privacyPolicyLink" | translate }}</a> {{ "privacyPolicyNotice-and agree..." | translate }}</span>
-        </div>
-        @if (!check.valid && check.touched) {
-            <span class="warningText">{{ "warningTextPrivacyPolicy" | translate }}</span>
-        }
+    <div class="privacyPolicy">
+        <input #check="ngModel" [(ngModel)]="contactData.privacyPolicy" type="checkbox" name="check"
+            (change)="privacyPolicyAccepted($event)" required>
+        <span>{{ "privacyPolicyNotice-I'veReadThe" | translate }} <a (click)="openPrivacyPolicy()">{{
+                "privacyPolicyLink" | translate }}</a> {{ "privacyPolicyNotice-and agree..." | translate }}</span>
+    </div>
+    @if (!check.valid && check.touched) {
+    <span class="warningText">{{ "warningTextPrivacyPolicy" | translate }}</span>
+    }
 
-        <input class="submitButton" type="submit" [value]=" 'submitButtonValue' | translate " [disabled]="!contactForm.valid || contactForm.submitted" (click)="test()">
-    </form>
-</div>
+    <input class="submitButton" type="submit" [value]=" 'submitButtonValue' | translate "
+        [disabled]="!contactForm.valid || contactForm.submitted" (click)="test()">
+</form>

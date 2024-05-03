@@ -4,10 +4,8 @@ h2 {
     font-size: 56px;
     font-weight: 800;
     margin: 0;
-    width: fit-content;
-    height: fit-content;
     position: absolute;
-    left: 104px;
+    left: 100px;
     top: 100px;
     transition: all ease-in-out 125ms;
 
@@ -47,6 +45,12 @@ img {
     animation: reverseBounceAnimation 3s infinite;
 }
 
+app-contact-form {
+    max-width: 617px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
 @keyframes reverseBounceAnimation {
     0%,20%,50%,80%,to {
         transform: translateY(0)
@@ -58,5 +62,41 @@ img {
 
     60% {
         transform: translateY(15px)
+    }
+}
+
+
+/* Responsiveness */
+@media screen and (max-width: 1000px) {
+    h2 {
+        font-size: 50px;
+        left: 25px;
+    }
+
+    h3 {
+        padding-left: 25px;
+        padding-right: 25px;
+        text-align: center;
+    }
+
+    h4 {
+        padding-left: 25px;
+        padding-right: 25px;
+        text-align: center;
+    }
+
+    img {
+        height: 40px;
+        right: 25px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    h2 {
+        font-size: 45px;
+    }
+
+    img {
+        display: none;
     }
 }

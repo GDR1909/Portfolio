@@ -73,16 +73,12 @@ app-contact {
 }
 
 app-footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: block;
     height: 150px;
     background-color: black;
     margin-left: -100px;
     margin-right: -100px;
     position: relative;
-    gap: 20px;
 }
 
 app-menu {
@@ -163,6 +159,17 @@ app-legal-notice {
     app-arrow-left {
         height: 150px;
     }
+
+    app-contact {
+        margin-left: -25px;
+        margin-right: -25px;
+        margin-top: -30px;
+    }
+
+    app-footer {
+        margin-left: -25px;
+        margin-right: -25px;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -178,5 +185,14 @@ app-legal-notice {
     app-arrow-left {
         height: 125px;
         justify-content: center;
+    }
+
+    app-footer {
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
     }
 }

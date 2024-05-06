@@ -200,3 +200,23 @@ h2 {
         }
     }
 }
+
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    .borderline {
+        width: 100px;
+    }
+
+    h2 {
+        font-size: 21px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    h1 {
+        font-size: 32px;
+    }
+}

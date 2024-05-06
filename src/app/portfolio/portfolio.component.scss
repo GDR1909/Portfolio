@@ -39,6 +39,7 @@ span {
 
         .projectInfo {
             translate: 0%;
+            // transform: translate(0%);
             opacity: 1;
             transition: all ease-in-out 750ms, opacity 750ms;
         }
@@ -88,6 +89,7 @@ span {
     display: flex;
     flex-direction: column;
     translate: -100%;
+    // transform: translate(-100%);
     opacity: 0;
     transition: all ease-in-out 750ms, opacity 750ms;
 }
@@ -216,6 +218,13 @@ a {
 
     .projectInfo {
         width: 470px;
+        translate: 0% -100%;
+    }
+
+    .row-reverse {
+        .projectInfo {
+            translate: 0% -100%;
+        }
     }
 }
 
@@ -243,5 +252,17 @@ a {
 
     .projectInfo {
         width: 316px;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    h2 {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 382px) {
+    h2 {
+        font-size: 35px;
     }
 }

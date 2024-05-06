@@ -17,9 +17,27 @@ a {
 
 
 /* Responsiveness */
+@media screen and (max-width: 1075px) {
+    a {
+        font-size: 90px;
+    }
+}
+
+@media screen and (max-width: 1010px) {
+    a {
+        font-size: 85px;
+    }
+}
+
 @media screen and (max-width: 1000px) {
     a {
         font-size: 80px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    a {
+        font-size: 70px;
     }
 }
 
@@ -31,9 +49,9 @@ a {
     }
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 570px) {
     a {
-        font-size: 40px;
+        font-size: 35px;
     }
 }
 

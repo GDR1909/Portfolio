@@ -1,0 +1,30 @@
+.sentMessagePopUp {
+    max-height: 550px;
+    max-width: 850px;
+    border: solid 3px black;
+    padding: 20px;
+    margin: 20px;
+    background: #FFFCF3;
+    opacity: 0;
+    animation: slideIn 8s;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(500px);
+    }
+
+    25% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(500px);
+    }
+}

@@ -36,5 +36,7 @@
 
     "submitButtonValue": "Send message",
 
-    "legalNotice": "Legal notice"
+    "legalNotice": "Legal notice",
+
+    "sentMessage": "Thank you. Your message has been sent. I will get in touch with you as soon as possible."
 }

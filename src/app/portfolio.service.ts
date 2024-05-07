@@ -45,4 +45,13 @@ export class PortfolioService {
   openLegalNotice() {
     document.getElementById('legalNotice')!.style.display = 'flex';
   }
+
+
+  showSentMessagePopUp() {
+    document.getElementById('sentMessage')!.style.display = 'flex';
+
+    setTimeout(() => {
+      document.getElementById('sentMessage')!.style.display = 'none';
+    }, 8000);
+  }
 }

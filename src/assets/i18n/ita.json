@@ -36,5 +36,7 @@
 
     "submitButtonValue": "Invia messaggio",
 
-    "legalNotice": "Impronta"
+    "legalNotice": "Impronta",
+
+    "sentMessage": "Grazie. Il tuo messaggio è stato inviato. Ti contatterò il prima possibile."
 }

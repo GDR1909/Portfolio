@@ -13,6 +13,7 @@ import { FooterComponent } from './footer/footer.component';
 import { MenuComponent } from './menu/menu.component';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 import { LegalNoticeComponent } from './legal-notice/legal-notice.component';
+import { SentMessageComponent } from './sent-message/sent-message.component';
 import { PortfolioService } from './portfolio.service';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
@@ -41,6 +42,7 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     MenuComponent,
     PrivacyPolicyComponent,
     LegalNoticeComponent,
+    SentMessageComponent,
     TranslateModule
   ],
   templateUrl: './app.component.html',

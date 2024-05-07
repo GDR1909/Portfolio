@@ -50,6 +50,7 @@ export class ContactFormComponent {
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
+            this.portfolioService.showSentMessagePopUp();
             // optionial code can be added here
             ngForm.resetForm();
           },
@@ -62,11 +63,6 @@ export class ContactFormComponent {
 
       ngForm.resetForm();
     }
-  }
-
-
-  test() {
-    console.log('Formular wurde gesendet!');
   }
 
 

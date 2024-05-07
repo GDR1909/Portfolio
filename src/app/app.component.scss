@@ -128,6 +128,20 @@ app-legal-notice {
     animation: fadeIn 0.5s ease-in-out;
 }
 
+app-sent-message {
+    height: 100vh;
+    width: 100%;
+    backdrop-filter: blur(5px);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
 @keyframes fadeIn {
     from {
         opacity: 0;

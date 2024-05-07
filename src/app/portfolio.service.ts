@@ -52,6 +52,6 @@ export class PortfolioService {
 
     setTimeout(() => {
       document.getElementById('sentMessage')!.style.display = 'none';
-    }, 8000);
+    }, 6000);
   }
 }

@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { PortfolioService } from '../../portfolio.service';
 
 @Component({
   selector: 'app-change-language',
@@ -13,14 +14,14 @@ export class ChangeLanguageComponent {
   changeLanguageDropdownMenuIsOpen = false;
   selectedLanguage: string = 'ENG';
   languages = ['ENG', 'DEU', 'ITA'];
-  clickFunction: () => void = this.openDropdown.bind(this);
+  clickFunctionChangeLanguageDropdown: () => void = this.openDropdown.bind(this);
 
-  constructor(public translate: TranslateService) { }
+  constructor(public translate: TranslateService, private portfolioService: PortfolioService) { }
 
 
   openDropdown() {
     if (!this.changeLanguageDropdownMenuIsOpen) {
-      this.clickFunction = this.closeDropdown.bind(this);
+      this.clickFunctionChangeLanguageDropdown = this.closeDropdown.bind(this);
       document.getElementById('changeLanguageBtn')!.style.border = 'solid 2px black';
       document.getElementById('changeLanguageBtn')!.style.borderBottom = 'none';
       document.getElementById('languageList')!.style.display = 'flex';
@@ -39,7 +40,7 @@ export class ChangeLanguageComponent {
 
   closeDropdown() {
     if (this.changeLanguageDropdownMenuIsOpen) {
-      this.clickFunction = this.openDropdown.bind(this);
+      this.clickFunctionChangeLanguageDropdown = this.openDropdown.bind(this);
       document.getElementById('languageList')!.style.display = 'none';
       document.getElementById('changeLanguageBtn')!.style.border = 'solid 2px black';
       this.changeLanguageDropdownMenuIsOpen = false;

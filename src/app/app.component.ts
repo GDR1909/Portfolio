@@ -55,6 +55,11 @@ export class AppComponent {
   constructor(private portfolioService: PortfolioService) { }
 
 
+  closeDropdown() {
+    this.portfolioService.closeDropdown();
+  }
+
+
   closePopUp(id: string) {
     document.getElementById(id)!.style.display = 'none';
   }

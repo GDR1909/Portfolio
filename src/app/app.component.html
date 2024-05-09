@@ -2,25 +2,25 @@
 
 <app-header></app-header>
 
-<app-menu id="menu"></app-menu>
+<app-menu id="menu" (click)="closeDropdown()"></app-menu>
 
-<app-landingPage id="landingPage"></app-landingPage>
+<app-landingPage id="landingPage" (click)="closeDropdown()"></app-landingPage>
 
-<app-about-me id="aboutMe"></app-about-me>
+<app-about-me id="aboutMe" (click)="closeDropdown()"></app-about-me>
 
-<app-arrow-right></app-arrow-right>
+<app-arrow-right (click)="closeDropdown()"></app-arrow-right>
 
-<app-my-skills id="mySkills"></app-my-skills>
+<app-my-skills id="mySkills" (click)="closeDropdown()"></app-my-skills>
 
-<app-arrow-left></app-arrow-left>
+<app-arrow-left (click)="closeDropdown()"></app-arrow-left>
 
-<app-portfolio id="portfolio"></app-portfolio>
+<app-portfolio id="portfolio" (click)="closeDropdown()"></app-portfolio>
 
-<app-arrow-right></app-arrow-right>
+<app-arrow-right (click)="closeDropdown()"></app-arrow-right>
 
-<app-contact id="contact" style="background-image: url('assets/img/contactBackground.png')"></app-contact>
+<app-contact id="contact" style="background-image: url('assets/img/contactBackground.png')" (click)="closeDropdown()"></app-contact>
 
-<app-footer></app-footer>
+<app-footer (click)="closeDropdown()"></app-footer>
 
 <app-privacy-policy id="privacyPolicy" (click)="closePopUp('privacyPolicy')"></app-privacy-policy>
 

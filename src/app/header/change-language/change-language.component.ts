@@ -11,40 +11,16 @@ import { PortfolioService } from '../../portfolio.service';
   styleUrl: './change-language.component.scss'
 })
 export class ChangeLanguageComponent {
-  changeLanguageDropdownMenuIsOpen = false;
   selectedLanguage: string = 'ENG';
   languages = ['ENG', 'DEU', 'ITA'];
-  clickFunctionChangeLanguageDropdown: () => void = this.openDropdown.bind(this);
 
-  constructor(public translate: TranslateService, private portfolioService: PortfolioService) { }
-
-
-  openDropdown() {
-    if (!this.changeLanguageDropdownMenuIsOpen) {
-      this.clickFunctionChangeLanguageDropdown = this.closeDropdown.bind(this);
-      document.getElementById('changeLanguageBtn')!.style.border = 'solid 2px black';
-      document.getElementById('changeLanguageBtn')!.style.borderBottom = 'none';
-      document.getElementById('languageList')!.style.display = 'flex';
-      this.changeLanguageDropdownMenuIsOpen = true;
-      console.log(this.changeLanguageDropdownMenuIsOpen);
-    }
-  }
+  
+  constructor(public translate: TranslateService, public portfolioService: PortfolioService) { }
 
 
   selectLanguage(language: string) {
     this.selectedLanguage = language;
     this.translate.use(this.selectedLanguage.toLocaleLowerCase());
-    this.closeDropdown();
-  }
-
-
-  closeDropdown() {
-    if (this.changeLanguageDropdownMenuIsOpen) {
-      this.clickFunctionChangeLanguageDropdown = this.openDropdown.bind(this);
-      document.getElementById('languageList')!.style.display = 'none';
-      document.getElementById('changeLanguageBtn')!.style.border = 'solid 2px black';
-      this.changeLanguageDropdownMenuIsOpen = false;
-      console.log(this.changeLanguageDropdownMenuIsOpen);
-    }
+    this.portfolioService.closeDropdown();
   }
 }

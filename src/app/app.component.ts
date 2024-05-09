@@ -52,15 +52,10 @@ export class AppComponent {
   title = 'portfolio';
 
 
-  constructor(private portfolioService: PortfolioService) { }
+  constructor(public portfolioService: PortfolioService) { }
 
 
   closeDropdown() {
     this.portfolioService.closeDropdown();
-  }
-
-
-  closePopUp(id: string) {
-    document.getElementById(id)!.style.display = 'none';
   }
 }

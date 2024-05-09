@@ -72,6 +72,11 @@ export class PortfolioService {
   }
 
 
+  closePopUp(id: string) {
+    document.getElementById(id)!.style.display = 'none';
+  }
+
+
   showSentMessagePopUp() {
     document.getElementById('sentMessage')!.style.display = 'flex';
 

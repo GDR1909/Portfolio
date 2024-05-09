@@ -22,8 +22,8 @@
 
 <app-footer (click)="closeDropdown()"></app-footer>
 
-<app-privacy-policy id="privacyPolicy" (click)="closePopUp('privacyPolicy')"></app-privacy-policy>
+<app-privacy-policy id="privacyPolicy" (click)="this.portfolioService.closePopUp('privacyPolicy')"></app-privacy-policy>
 
-<app-legal-notice id="legalNotice" (click)="closePopUp('legalNotice')"></app-legal-notice>
+<app-legal-notice id="legalNotice" (click)="this.portfolioService.closePopUp('legalNotice')"></app-legal-notice>
 
 <app-sent-message id="sentMessage"></app-sent-message>

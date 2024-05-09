@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { PortfolioService } from '../portfolio.service';
 
 @Component({
   selector: 'app-legal-notice',
@@ -8,6 +9,9 @@ import { Component } from '@angular/core';
   styleUrl: './legal-notice.component.scss'
 })
 export class LegalNoticeComponent {
+  constructor(public portfolioService: PortfolioService) { }
+
+
   doNotClose(event: MouseEvent) {
     event.stopPropagation();
   }

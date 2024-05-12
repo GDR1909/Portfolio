@@ -178,8 +178,21 @@ h2 {
 }
 
 @media screen and (max-width: 600px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    .borderline {
+        width: 100px;
+    }
+
+    h2 {
+        font-size: 21px;
+    }
+
     .sendAMessageButton {
         display: flex;
+        margin-top: 50px;
     }
 
     .email {
@@ -198,20 +211,6 @@ h2 {
             height: 50px;
             width: 30px;
         }
-    }
-}
-
-@media screen and (max-width: 600px) {
-    h1 {
-        font-size: 40px;
-    }
-
-    .borderline {
-        width: 100px;
-    }
-
-    h2 {
-        font-size: 21px;
     }
 }
 

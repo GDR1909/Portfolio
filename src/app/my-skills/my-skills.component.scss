@@ -24,6 +24,9 @@ h2 {
     justify-content: center;
     align-items: center;
     gap: 15px;
+    border: 4px solid black;
+    position: relative;
+    padding: 50px;
 
     .skillDiv {
         display: flex;
@@ -118,6 +121,7 @@ h2 {
 
     .iconsList {
         gap: 5px;
+        padding: 20px;
     }
 
     .skillDiv {

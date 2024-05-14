@@ -12,18 +12,40 @@ app-header {
     z-index: 10;
 }
 
+app-menu {
+    font-family: 'Syne';
+    font-weight: 700;
+    font-size: 96px;
+    height: 100vh;
+    width: 100%;
+    margin-left: -100px;
+    margin-right: -100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: fixed;
+    z-index: 9;
+    background-color: #FFFCF3;
+    top: -100%;
+}
+
 app-landingPage {
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 app-about-me {
-    height: 100vh;
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
+    max-width: 1440px;
+    padding-top: 92px;
 }
 
 app-arrow-right {
@@ -32,15 +54,16 @@ app-arrow-right {
     justify-content: end;
     align-items: center;
     overflow: hidden;
-    margin: 30px;
+    margin: 30px auto;
+    max-width: 1440px;
 }
 
 app-my-skills {
-    height: calc(100vh - 126px);
     display: flex;
     justify-content: center;
-    border: 4px solid black;
-    position: relative;
+    margin: 0 auto;
+    max-width: 1440px;
+    padding-top: 120px;
 }
 
 app-arrow-left {
@@ -49,13 +72,17 @@ app-arrow-left {
     justify-content: start;
     align-items: center;
     overflow: hidden;
-    margin: 30px;
+    margin: 30px auto;
+    max-width: 1440px;
 }
 
 app-portfolio {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0 auto;
+    max-width: 1440px;
+    padding-top: 92px;
 }
 
 app-contact {
@@ -79,25 +106,6 @@ app-footer {
     margin-left: -100px;
     margin-right: -100px;
     position: relative;
-}
-
-app-menu {
-    font-family: 'Syne';
-    font-weight: 700;
-    font-size: 96px;
-    height: 100vh;
-    width: 100%;
-    margin-left: -100px;
-    margin-right: -100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    position: fixed;
-    z-index: 9;
-    background-color: #FFFCF3;
-    top: -100%;
 }
 
 app-privacy-policy {

@@ -9,5 +9,10 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
   styleUrl: './sent-message.component.scss'
 })
 export class SentMessageComponent {
+  /**
+   * Creates an instance of SentMessageComponent.
+   *
+   * @param {TranslateService} translate - The service used for language translation.
+   */
   constructor(public translate: TranslateService) { }
 }

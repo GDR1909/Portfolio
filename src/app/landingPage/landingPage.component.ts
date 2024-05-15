@@ -10,5 +10,10 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
   styleUrl: './landingPage.component.scss'
 })
 export class LandingPageComponent {
+  /**
+   * Creates an instance of LandingPageComponent.
+   *
+   * @param {TranslateService} translate - The service used for language translation.
+   */
   constructor(public translate: TranslateService) { }
 }

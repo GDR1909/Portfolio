@@ -13,6 +13,9 @@ export class PortfolioService {
   constructor() { }
 
 
+  /**
+   * Opens the change language dropdown menu.
+   */
   openDropdown() {
     if (!this.changeLanguageDropdownMenuIsOpen) {
       this.clickFunctionChangeLanguageDropdown = this.closeDropdown.bind(this);
@@ -20,22 +23,26 @@ export class PortfolioService {
       document.getElementById('changeLanguageBtn')!.style.borderBottom = 'none';
       document.getElementById('languageList')!.style.display = 'flex';
       this.changeLanguageDropdownMenuIsOpen = true;
-      console.log(this.changeLanguageDropdownMenuIsOpen);
     }
   }
 
 
+  /**
+    * Closes the change language dropdown menu.
+    */
   closeDropdown() {
     if (this.changeLanguageDropdownMenuIsOpen) {
       this.clickFunctionChangeLanguageDropdown = this.openDropdown.bind(this);
       document.getElementById('languageList')!.style.display = 'none';
       document.getElementById('changeLanguageBtn')!.style.border = 'solid 2px black';
       this.changeLanguageDropdownMenuIsOpen = false;
-      console.log(this.changeLanguageDropdownMenuIsOpen);
     }
   }
 
 
+  /**
+   * Opens the menu.
+   */
   openMenu() {
     document.getElementById('menu')!.style.transform = 'translateY(0%)';
     document.getElementById('menu')!.style.top = '0%';
@@ -44,11 +51,13 @@ export class PortfolioService {
     setTimeout(() => {
       this.menuIconSrc = 'assets/img/close.png';
       this.clickFunction = this.closeMenu.bind(this);
-      console.log('open menu works!');
     }, 750);
   }
 
 
+  /**
+   * Closes the menu.
+   */
   closeMenu() {
     document.getElementById('menu')!.style.transform = 'translateY(-100%)';
     document.getElementById('menu')!.style.top = '-100%';
@@ -57,26 +66,40 @@ export class PortfolioService {
     setTimeout(() => {
       this.menuIconSrc = 'assets/img/menuIcon.png';
       this.clickFunction = this.openMenu.bind(this);
-      console.log('close menu works!');
     }, 250);
   }
 
 
+  /**
+   * Opens the privacy policy popup.
+   */
   openPrivacyPolicy() {
     document.getElementById('privacyPolicy')!.style.display = 'flex';
   }
 
 
+  /**
+   * Opens the legal notice popup.
+   */
   openLegalNotice() {
     document.getElementById('legalNotice')!.style.display = 'flex';
   }
 
 
+  /**
+   * Closes a popup identified by its id.
+   *
+   * @param {string} id - The ID of the popup element to close.
+   */
   closePopUp(id: string) {
     document.getElementById(id)!.style.display = 'none';
   }
 
 
+  /**
+   * Displays a popup indicating that a message has been sent.
+   * The popup will automatically disappear after 6 seconds.
+   */
   showSentMessagePopUp() {
     document.getElementById('sentMessage')!.style.display = 'flex';
 

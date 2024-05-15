@@ -10,9 +10,15 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
   styleUrl: './my-skills.component.scss'
 })
 export class MySkillsComponent {
+  /**
+   * Creates an instance of MySkillsComponent.
+   *
+   * @param {TranslateService} translate - The service used for language translation.
+   */
   constructor(public translate: TranslateService) { }
 
 
+  /** List of skills with their icons and names. */
   skills = [
     {
       'icon': 'assets/skillIcons/angular.png',

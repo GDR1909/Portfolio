@@ -5,7 +5,13 @@ import { fileURLToPath } from 'node:url';
 import { dirname, join, resolve } from 'node:path';
 import bootstrap from './src/main.server';
 
-// The Express app is exported so that it can be used by serverless Functions.
+
+/**
+ * Creates and configures an Express server to serve an Angular application.
+ * The Express app is exported so that it can be used by serverless Functions.
+ * 
+ * @returns {express.Express} The configured Express server.
+ */
 export function app(): express.Express {
   const server = express();
   const serverDistFolder = dirname(fileURLToPath(import.meta.url));
@@ -43,6 +49,11 @@ export function app(): express.Express {
   return server;
 }
 
+
+/**
+ * Starts the Node server on the specified port.
+ * The port is read from the environment variable 'PORT' or defaults to 4000.
+ */
 function run(): void {
   const port = process.env['PORT'] || 4000;
 
@@ -52,5 +63,6 @@ function run(): void {
     console.log(`Node Express server listening on http://localhost:${port}`);
   });
 }
+
 
 run();

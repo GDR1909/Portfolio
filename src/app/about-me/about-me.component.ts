@@ -9,5 +9,10 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
   styleUrl: './about-me.component.scss'
 })
 export class AboutMeComponent {
+  /**
+   * Creates an instance of AboutMeComponent.
+   *
+   * @param {TranslateService} translate - The service used for language translation.
+   */
   constructor(public translate: TranslateService) { }
 }

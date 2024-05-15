@@ -10,9 +10,18 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
   styleUrl: './footer.component.scss'
 })
 export class FooterComponent {
+  /**
+   * Creates an instance of FooterComponent.
+   *
+   * @param {PortfolioService} portfolioService - The service used to manage the portfolio.
+   * @param {TranslateService} translate - The service used for language translation.
+   */
   constructor(private portfolioService: PortfolioService, translate: TranslateService) { }
 
 
+  /**
+   * Opens the legal notice popup.
+   */
   openLegalNotice() {
     this.portfolioService.openLegalNotice();
   }

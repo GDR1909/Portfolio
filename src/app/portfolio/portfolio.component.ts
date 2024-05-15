@@ -10,9 +10,15 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
   styleUrl: './portfolio.component.scss'
 })
 export class PortfolioComponent {
+  /**
+   * Creates an instance of PortfolioComponent.
+   *
+   * @param {TranslateService} translate - The service used for language translation.
+   */
   constructor(public translate: TranslateService) { }
 
 
+  /** List of projects with their image, name, used technologies, description, GitHub URL, and live test URL. */
   projects = [
     {
       'img': 'assets/portfolioImg/elPolloLoco.png',

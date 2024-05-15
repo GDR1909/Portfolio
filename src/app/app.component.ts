@@ -20,9 +20,16 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient } from '@angular/common/http';
 
 
+/**
+ * Factory function for creating an instance of TranslateHttpLoader.
+ *
+ * @param {HttpClient} httpClient - The HTTP client used to load translation files.
+ * @returns {TranslateHttpLoader} A TranslateHttpLoader instance.
+ */
 export function HttpLoaderFactory(httpClient: HttpClient) {
   return new TranslateHttpLoader(httpClient, './assets/i18n/', '.json');
 }
+
 
 @Component({
   selector: 'app-root',
@@ -49,12 +56,21 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
+  /** The title of the application. */
   title = 'portfolio';
 
 
+  /**
+   * Creates an instance of AppComponent.
+   *
+   * @param {PortfolioService} portfolioService - The service used to manage the portfolio.
+   */
   constructor(public portfolioService: PortfolioService) { }
 
 
+  /**
+   * Closes the dropdown menu by calling the corresponding method in PortfolioService.
+   */
   closeDropdown() {
     this.portfolioService.closeDropdown();
   }

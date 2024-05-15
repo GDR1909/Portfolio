@@ -10,14 +10,25 @@ import { ChangeLanguageComponent } from './change-language/change-language.compo
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
+  /**
+   * Creates an instance of HeaderComponent.
+   *
+   * @param {PortfolioService} portfolioService - The service used to manage the portfolio.
+   */
   constructor(public portfolioService: PortfolioService) { }
 
 
+  /**
+   * Opens the menu.
+   */
   openMenu() {
     this.portfolioService.openMenu();
   }
 
 
+  /**
+   * Closes the menu.
+   */
   closeMenu() {
     this.portfolioService.closeMenu();
   }

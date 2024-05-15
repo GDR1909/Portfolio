@@ -12,8 +12,10 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
   styleUrl: './contact-form.component.scss'
 })
 export class ContactFormComponent {
+  /** HTTP client for sending requests. */
   http = inject(HttpClient);
 
+  /** Data object representing the contact form. */
   contactData = {
     name: '',
     email: '',
@@ -21,8 +23,10 @@ export class ContactFormComponent {
     privacyPolicy: false
   }
 
+  /** Indicates if a mail test is currently being performed. */
   mailTest = false;
 
+  /** Configuration for the HTTP POST request. */
   post = {
     endPoint: 'https://davide-religioso.com/sendMail.php',  // 'https://deineDomain.de/sendMail.php'
     body: (payload: any) => JSON.stringify(payload),
@@ -35,16 +39,31 @@ export class ContactFormComponent {
   };
 
 
+  /**
+   * Creates an instance of ContactFormComponent.
+   *
+   * @param {PortfolioService} portfolioService - The service used to manage the portfolio.
+   * @param {TranslateService} translate - The service used for language translation.
+   */
   constructor(private portfolioService: PortfolioService, translate: TranslateService) { }
 
 
+  /**
+   * Updates the privacy policy acceptance status based on the checkbox state.
+   *
+   * @param {any} event - The event object representing the checkbox state change.
+   */
   privacyPolicyAccepted(event: any) {
     const isChecked = event.target.checked;
     this.contactData.privacyPolicy = isChecked;
-    console.log(this.contactData.privacyPolicy);
   }
 
   
+  /**
+   * Handles form submission.
+   *
+   * @param {NgForm} ngForm - The NgForm object representing the form.
+   */
   onSubmit(ngForm: NgForm) {
     if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
@@ -60,12 +79,15 @@ export class ContactFormComponent {
           complete: () => console.info('send post complete'),
         });
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
-
+      // Perform mail test-specific actions
       ngForm.resetForm();
     }
   }
 
 
+  /**
+   * Opens the privacy policy popup.
+   */
   openPrivacyPolicy() {
     this.portfolioService.openPrivacyPolicy();
   }

@@ -89,29 +89,29 @@ h2 {
 
 
 /* Responsiveness */
-@media screen and (max-width: 1300px) {
-    span {
-        height: 450px;
-        overflow-y: auto;
+// @media screen and (max-width: 1300px) {
+//     span {
+//         height: 450px;
+//         overflow-y: auto;
 
-        &::-webkit-scrollbar {
-            width: 8px;
-        }
+//         &::-webkit-scrollbar {
+//             width: 8px;
+//         }
 
-        &::-webkit-scrollbar-track {
-            border-radius: 5px;
-        }
+//         &::-webkit-scrollbar-track {
+//             border-radius: 5px;
+//         }
 
-        &::-webkit-scrollbar-thumb {
-            background: #CFCCD1;
-            border-radius: 5px;
-        }
+//         &::-webkit-scrollbar-thumb {
+//             background: #CFCCD1;
+//             border-radius: 5px;
+//         }
 
-        &::-webkit-scrollbar-thumb:hover {
-            background: #abaaac;
-        }
-    }
-}
+//         &::-webkit-scrollbar-thumb:hover {
+//             background: #abaaac;
+//         }
+//     }
+// }
 
 @media screen and (max-width: 1150px) {
     .aboutMeContent {
@@ -128,7 +128,7 @@ h2 {
     }
 
     span {
-        height: 350px;
+        // height: 350px;
         font-size: 20px !important;
     }
 
@@ -139,9 +139,9 @@ h2 {
 }
 
 @media screen and (max-width: 700px) {
-    span {
-        height: 300px;
-    }
+    // span {
+    //     height: 300px;
+    // }
 
     img {
         height: 300px !important;

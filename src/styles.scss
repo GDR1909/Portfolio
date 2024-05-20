@@ -6,8 +6,6 @@ body {
     margin: 0;
     background-color: #FFFCF3;
     font-family: 'Overpass';
-    padding-left: 100px;
-    padding-right: 100px;
 
     &::-webkit-scrollbar {
         width: 8px;
@@ -37,6 +35,13 @@ body {
 
 
 /* Responsiveness */
+@media screen and (max-width: 1440px) {
+    body {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}
+
 @media screen and (max-width: 1000px) {
     body {
         padding-left: 25px;

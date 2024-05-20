@@ -1,8 +1,16 @@
+footer {
+    background-color: black;
+    position: relative;
+    height: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
 .logo {
     height: 30px;
     position: absolute;
     top: 30px;
-    left: 100px;
+    left: 0px;
 }
 
 .links {
@@ -11,7 +19,7 @@
     align-items: center;
     position: absolute;
     top: 30px;
-    right: 100px;
+    right: 0px;
     gap: 42px;
 
     img {
@@ -32,7 +40,7 @@
     gap: 10px;
     position: absolute;
     bottom: 30px;
-    left: 100px;
+    left: 0px;
 
     img {
         height: 20px;
@@ -50,7 +58,7 @@
     text-decoration: none;
     position: absolute;
     bottom: 30px;
-    right: 100px;
+    right: 0px;
     transition: all ease-in-out 125ms;
 
     &:hover {
@@ -63,6 +71,11 @@
 
 /* Responsiveness */
 @media screen and (max-width: 1000px) {
+    footer {
+        margin-left: -25px;
+        margin-right: -25px;
+    }
+
     .logo, .copyright {
         left: 25px;
     }
@@ -73,6 +86,15 @@
 }
 
 @media screen and (max-width: 600px) {
+    footer {
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+    }
+
     .links, .logo, .copyright, .legalNotice {
         position: static;
     }

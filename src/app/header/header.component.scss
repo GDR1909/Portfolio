@@ -1,20 +1,22 @@
-a {
+header {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+img {
     width: 75px;
     height: 30px;
-    margin-left: 100px;
-
-    img {
-        width: 75px;
-        height: 30px;
-        cursor: pointer;
-    }
+    cursor: pointer;
 }
 
 .changeLanguageAndMenu {
     display: flex;
     align-items: center;
     gap: 50px;
-    margin-right: 100px;
 }
 
 .menuIcon {
@@ -25,6 +27,16 @@ a {
 
 
 /* Responsiveness */
+@media screen and (max-width: 1440px) {
+    a {
+        margin-left: 100px;
+    }
+
+    .changeLanguageAndMenu {
+        margin-right: 100px;
+    }
+}
+
 @media screen and (max-width: 1000px) {
     a {
         margin-left: 25px;

@@ -1,3 +1,11 @@
+.contact {
+    position: relative;
+    height: 800px;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
 h2 {
     color: #FFFCF3;
     font-family: "Syne";
@@ -5,8 +13,8 @@ h2 {
     font-weight: 800;
     margin: 0;
     position: absolute;
-    left: 100px;
-    top: 100px;
+    left: 0px;
+    top: 0px;
     transition: all ease-in-out 125ms;
 
     &:hover {
@@ -40,7 +48,7 @@ h4 {
 
 img {
     position: absolute;
-    right: 100px;
+    right: 0px;
     bottom: 30px;
     animation: reverseBounceAnimation 3s infinite;
 }
@@ -70,7 +78,6 @@ app-contact-form {
 @media screen and (max-width: 1000px) {
     h2 {
         font-size: 50px;
-        left: 25px;
     }
 
     h3 {
@@ -87,7 +94,6 @@ app-contact-form {
 
     img {
         height: 40px;
-        right: 25px;
     }
 }
 
@@ -98,5 +104,11 @@ app-contact-form {
 
     img {
         display: none;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    h2 {
+        top: -50px;
     }
 }

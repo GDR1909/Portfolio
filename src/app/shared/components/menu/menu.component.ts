@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { PortfolioService } from '../portfolio.service';
+import { PortfolioService } from '../../../portfolio.service';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({

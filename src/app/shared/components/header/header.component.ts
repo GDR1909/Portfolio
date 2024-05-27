@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { PortfolioService } from '../portfolio.service';
+import { PortfolioService } from '../../../portfolio.service';
 import { ChangeLanguageComponent } from './change-language/change-language.component';
 
 @Component({

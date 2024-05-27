@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
-import { PortfolioService } from '../../portfolio.service';
+import { PortfolioService } from '../../../portfolio.service';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
@@ -82,13 +82,5 @@ export class ContactFormComponent {
       // Perform mail test-specific actions
       ngForm.resetForm();
     }
-  }
-
-
-  /**
-   * Opens the privacy policy popup.
-   */
-  openPrivacyPolicy() {
-    this.portfolioService.openPrivacyPolicy();
   }
 }

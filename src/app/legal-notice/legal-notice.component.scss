@@ -1,32 +1,44 @@
-.legalNoticePopUp {
-    max-height: 550px;
-    max-width: 850px;
-    border: solid 3px black;
-    padding: 20px;
-    margin: 20px;
-    background: #FFFCF3;
-    position: relative;
-    overflow-y: auto;
+.legalNotice {
+    margin: 0 auto;
+    max-width: 1440px;
+    padding-top: 92px;
+    padding-bottom: 92px;
 }
 
-img {
-    height: 20px;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    transition: all ease-in-out 125ms;
+h1 {
+    font-size: 56px;
+}
 
-    &:hover {
-        cursor: pointer;
-        transform: scale(1.2);
-        transition: all ease-in-out 125ms;
-    }
+h2 {
+    font-size: 48px;
 }
 
 h3 {
+    font-size: 40px;
     margin-bottom: 5px;
 }
 
 p {
+    font-size: 32px;
     margin: 0;
+}
+
+
+/* Responsiveness */
+@media screen and (max-width: 1440px) {
+    h1 {
+        font-size: 2em;
+    }
+    
+    h2 {
+        font-size: 1.5em;
+    }
+    
+    h3 {
+        font-size: 1.17em;
+    }
+    
+    p {
+        font-size: 16px;
+    }
 }

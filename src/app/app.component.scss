@@ -26,119 +26,10 @@ app-menu {
     top: -100%;
 }
 
-app-landingPage {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    margin: 0 auto;
-    max-width: 1440px;
-}
-
-app-about-me {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    max-width: 1440px;
-    padding-top: 92px;
-}
-
-app-arrow-right {
-    height: 200px;
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    overflow: hidden;
-    margin: 30px auto;
-    max-width: 1440px;
-}
-
-app-my-skills {
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-    max-width: 1440px;
-    padding-top: 120px;
-}
-
-app-arrow-left {
-    height: 200px;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    overflow: hidden;
-    margin: 30px auto;
-    max-width: 1440px;
-}
-
-app-portfolio {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 auto;
-    max-width: 1440px;
-    padding-top: 92px;
-}
-
-app-contact {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 200px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-top: -80px;
-}
-
 app-footer {
     display: block;
     background-color: black;
     height: 150px;
-}
-
-app-privacy-policy {
-    height: 100vh;
-    width: 100%;
-    backdrop-filter: blur(5px);
-    display: none;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    animation: fadeIn 0.5s ease-in-out;
-}
-
-app-legal-notice {
-    height: 100vh;
-    width: 100%;
-    backdrop-filter: blur(5px);
-    display: none;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    animation: fadeIn 0.5s ease-in-out;
-}
-
-app-sent-message {
-    height: 100vh;
-    width: 100%;
-    backdrop-filter: blur(5px);
-    display: none;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    animation: fadeIn 0.5s ease-in-out;
 }
 
 @keyframes fadeIn {
@@ -159,13 +50,6 @@ app-sent-message {
         margin-right: -100px;
     }
 
-    app-contact {
-        margin-left: -100px;
-        margin-right: -100px;
-        padding-left: 100px;
-        padding-right: 100px;
-    }
-
     app-footer {
         margin-left: -100px;
         margin-right: -100px;
@@ -182,46 +66,10 @@ app-sent-message {
         gap: 30px;
     }
 
-    app-arrow-right {
-        height: 150px;
-    }
-
-    app-arrow-left {
-        height: 150px;
-    }
-
-    app-contact {
-        margin-top: -30px;
-        margin-left: -25px;
-        margin-right: -25px;
-        padding-left: 25px;
-        padding-right: 25px;
-    }
-
     app-footer {
         margin-left: -25px;
         margin-right: -25px;
         padding-left: 25px;
         padding-right: 25px;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    app-about-me {
-        height: auto;
-    }
-
-    app-arrow-right {
-        height: 125px;
-        justify-content: center;
-    }
-
-    app-arrow-left {
-        height: 125px;
-        justify-content: center;
-    }
-
-    app-contact {
-        padding-top: 100px;
     }
 }

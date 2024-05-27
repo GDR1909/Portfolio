@@ -1,23 +1,16 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
-import { LandingPageComponent } from './landingPage/landingPage.component';
-import { HeaderComponent } from './header/header.component';
-import { AboutMeComponent } from './about-me/about-me.component';
-import { ArrowRightComponent } from './arrow-right/arrow-right.component';
-import { MySkillsComponent } from './my-skills/my-skills.component';
-import { ArrowLeftComponent } from './arrow-left/arrow-left.component';
-import { PortfolioComponent } from './portfolio/portfolio.component';
-import { ContactComponent } from './contact/contact.component';
-import { FooterComponent } from './footer/footer.component';
-import { MenuComponent } from './menu/menu.component';
-import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
-import { LegalNoticeComponent } from './legal-notice/legal-notice.component';
-import { SentMessageComponent } from './sent-message/sent-message.component';
 import { PortfolioService } from './portfolio.service';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient } from '@angular/common/http';
+import { MainContentComponent } from './main-content/main-content.component';
+import { FooterComponent } from './shared/components/footer/footer.component';
+import { LegalNoticeComponent } from './legal-notice/legal-notice.component';
+import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
+import { HeaderComponent } from './shared/components/header/header.component';
+import { MenuComponent } from './shared/components/menu/menu.component';
 
 
 /**
@@ -37,19 +30,12 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
   imports: [
     CommonModule,
     RouterOutlet,
-    LandingPageComponent,
+    MainContentComponent,
     HeaderComponent,
-    AboutMeComponent,
-    ArrowRightComponent,
-    MySkillsComponent,
-    ArrowLeftComponent,
-    PortfolioComponent,
-    ContactComponent,
-    FooterComponent,
     MenuComponent,
+    FooterComponent,
     PrivacyPolicyComponent,
     LegalNoticeComponent,
-    SentMessageComponent,
     TranslateModule
   ],
   templateUrl: './app.component.html',

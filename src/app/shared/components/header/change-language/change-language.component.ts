@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
-import { PortfolioService } from '../../portfolio.service';
+import { PortfolioService } from '../../../../portfolio.service';
 
 @Component({
   selector: 'app-change-language',

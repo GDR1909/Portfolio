@@ -71,32 +71,6 @@ export class PortfolioService {
 
 
   /**
-   * Opens the privacy policy popup.
-   */
-  openPrivacyPolicy() {
-    document.getElementById('privacyPolicy')!.style.display = 'flex';
-  }
-
-
-  /**
-   * Opens the legal notice popup.
-   */
-  openLegalNotice() {
-    document.getElementById('legalNotice')!.style.display = 'flex';
-  }
-
-
-  /**
-   * Closes a popup identified by its id.
-   *
-   * @param {string} id - The ID of the popup element to close.
-   */
-  closePopUp(id: string) {
-    document.getElementById(id)!.style.display = 'none';
-  }
-
-
-  /**
    * Displays a popup indicating that a message has been sent.
    * The popup will automatically disappear after 6 seconds.
    */

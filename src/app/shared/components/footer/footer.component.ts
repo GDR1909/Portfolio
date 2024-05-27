@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { PortfolioService } from '../portfolio.service';
+import { PortfolioService } from '../../../portfolio.service';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
@@ -17,12 +17,4 @@ export class FooterComponent {
    * @param {TranslateService} translate - The service used for language translation.
    */
   constructor(private portfolioService: PortfolioService, translate: TranslateService) { }
-
-
-  /**
-   * Opens the legal notice popup.
-   */
-  openLegalNotice() {
-    this.portfolioService.openLegalNotice();
-  }
 }

@@ -12,10 +12,10 @@ import { PortfolioService } from '../../../../portfolio.service';
 })
 export class ChangeLanguageComponent {
   /** The currently selected language. */
-  selectedLanguage: string = 'ENG';
+  selectedLanguage: string = 'DEU';
 
   /** List of available languages. */
-  languages = ['ENG', 'DEU', 'ITA'];
+  languages = ['DEU', 'ENG', 'ITA'];
 
   
   /**

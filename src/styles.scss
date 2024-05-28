@@ -6,6 +6,7 @@ body {
     margin: 0;
     background-color: #FFFCF3;
     font-family: 'Overpass';
+    overflow-x: hidden;
 
     &::-webkit-scrollbar {
         width: 8px;

@@ -21,8 +21,8 @@
     <div class="privacyPolicy">
         <input #check="ngModel" [(ngModel)]="contactData.privacyPolicy" type="checkbox" name="check"
             (change)="privacyPolicyAccepted($event)" required>
-        <span>{{ "privacyPolicyNotice-I'veReadThe" | translate }} <a href="privacy-policy">{{
-                "privacyPolicyLink" | translate }}</a> {{ "privacyPolicyNotice-and agree..." | translate }}</span>
+        <span>{{ "privacyPolicyNotice-I'veReadThe" | translate }} <a routerLink="/privacy-policy"
+                routerLinkActive="active">{{ "privacyPolicyLink" | translate }}</a> {{ "privacyPolicyNotice-and agree..." | translate }}</span>
     </div>
     @if (!check.valid && check.touched) {
     <span class="warningText">{{ "warningTextPrivacyPolicy" | translate }}</span>

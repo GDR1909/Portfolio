@@ -3,11 +3,16 @@ import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { PortfolioService } from '../../../portfolio.service';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
   selector: 'app-contact-form',
   standalone: true,
-  imports: [FormsModule, TranslateModule],
+  imports: [FormsModule,
+    TranslateModule,
+    RouterLink,
+    RouterLinkActive,
+  ],
   templateUrl: './contact-form.component.html',
   styleUrl: './contact-form.component.scss'
 })

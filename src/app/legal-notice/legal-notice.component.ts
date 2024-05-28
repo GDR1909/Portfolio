@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -8,4 +9,22 @@ import { CommonModule } from '@angular/common';
   templateUrl: './legal-notice.component.html',
   styleUrl: './legal-notice.component.scss'
 })
-export class LegalNoticeComponent { }
+export class LegalNoticeComponent implements OnInit {
+  /**
+   * Creates an instance of LegalNoticeComponent.
+   * 
+   * @param {Router} router - The Angular Router service.
+   */
+  constructor(private router: Router) { }
+
+
+  /**
+   * Angular lifecycle hook that is called after the component has been initialized.
+   * Navigates to the '/legal-notice' route and scrolls the window to the top.
+   */
+  ngOnInit() {
+    this.router.navigateByUrl('/legal-notice').then(() => {
+      window.scrollTo(0, 0);
+    });
+  }
+}

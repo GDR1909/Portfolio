@@ -36,7 +36,35 @@
 
     "submitButtonValue": "Invia messaggio",
 
-    "legalNotice": "Impronta",
+    "legalNoticeLink": "Impronta",
 
-    "sentMessage": "Grazie. Il tuo messaggio è stato inviato. Ti contatterò il prima possibile."
+    "sentMessage": "Grazie. Il tuo messaggio è stato inviato. Ti contatterò il prima possibile.",
+
+    "legalNotice": {
+        "h1": "Impronta",
+
+        "InformationAccordingTo§5TMG": {
+            "h2": "Informazioni secondo il § 5 TMG:",
+            "frontendDeveloper": "Sviluppatore Frontend"
+        },
+
+        "postalAdress": "Indirizzo postale",
+
+        "contact": {
+            "h3": "Contattare",
+            "phone": "Telefono:",
+            "email": "E-mail:"
+        },
+
+        "InformationAccordingTo§36VSBG": {
+            "h2": "Informazioni secondo il § 36 VSBG",
+            "one": "Ai sensi del § 36 VSBG (Legge sulla risoluzione delle controversie dei consumatori - Legge sulla risoluzione alternativa delle controversie in materia di consumo), il gestore di questo sito web dichiara:",
+            "two": "Non siamo disposti né obbligati a partecipare a procedure di risoluzione delle controversie davanti a un collegio arbitrale dei consumatori.",
+            "three": {
+                "firstPart": "L'impronta è stata creata con il",
+                "aTag": "generatore di impronte",
+                "secondPart": "di activeMind AG."
+            }
+        }
+    }
 }

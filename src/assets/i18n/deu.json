@@ -36,7 +36,35 @@
 
     "submitButtonValue": "Nachricht senden",
 
-    "legalNotice": "Impressum",
+    "legalNoticeLink": "Impressum",
 
-    "sentMessage": "Vielen Dank. Ihre Nachricht wurde abgeschickt. Ich werde mich so bald wie möglich mit Ihnen melden."
+    "sentMessage": "Vielen Dank. Ihre Nachricht wurde abgeschickt. Ich werde mich so bald wie möglich mit Ihnen melden.",
+
+    "legalNotice": {
+        "h1": "Impressum",
+
+        "InformationAccordingTo§5TMG": {
+            "h2": "Angaben gemäß § 5 TMG:",
+            "frontendDeveloper": "Frontend-Entwickler"
+        },
+
+        "postalAdress": "Postanschrift",
+
+        "contact": {
+            "h3": "Kontakt",
+            "phone": "Telefon:",
+            "email": "E-Mail:"
+        },
+
+        "InformationAccordingTo§36VSBG": {
+            "h2": "Angaben gemäß § 36 VSBG",
+            "one": "Gemäß § 36 VSBG (Verbraucherstreitbeilegungsgesetz – Gesetz zur alternativen Streitbeilegung in Verbrauchersachen) erklärt der Betreiber dieser Website:",
+            "two": "Wir sind weder bereit noch verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.",
+            "three": {
+                "firstPart": "Das Impressum wurde mit dem",
+                "aTag": "Impressum-Generator der activeMind AG",
+                "secondPart": "erstellt."
+            }
+        }
+    }
 }

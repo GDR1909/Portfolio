@@ -36,7 +36,35 @@
 
     "submitButtonValue": "Send message",
 
-    "legalNotice": "Legal notice",
+    "legalNoticeLink": "Legal notice",
 
-    "sentMessage": "Thank you. Your message has been sent. I will get in touch with you as soon as possible."
+    "sentMessage": "Thank you. Your message has been sent. I will get in touch with you as soon as possible.",
+
+    "legalNotice": {
+        "h1": "Legal Notice",
+
+        "InformationAccordingTo§5TMG": {
+            "h2": "Information according to § 5 TMG:",
+            "frontendDeveloper": "Frontend Developer"
+        },
+
+        "postalAdress": "Postal address",
+
+        "contact": {
+            "h3": "Contact",
+            "phone": "Phone number:",
+            "email": "E-mail address:"
+        },
+
+        "InformationAccordingTo§36VSBG": {
+            "h2": "Information according to § 36 VSBG",
+            "one": "In accordance with § 36 VSBG (Consumer Dispute Resolution Act - Act on Alternative Dispute Resolution in Consumer Matters), the operator of this website declares:",
+            "two": "We are neither willing nor obliged to participate in dispute resolution proceedings before a consumer arbitration board.",
+            "three": {
+                "firstPart": "The imprint was created with the",
+                "aTag": "imprint generator",
+                "secondPart": "of activeMind AG."
+            }
+        }
+    }
 }

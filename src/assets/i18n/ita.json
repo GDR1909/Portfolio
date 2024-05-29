@@ -40,6 +40,7 @@
 
     "sentMessage": "Grazie. Il tuo messaggio è stato inviato. Ti contatterò il prima possibile.",
 
+
     "legalNotice": {
         "h1": "Impronta",
 
@@ -65,6 +66,112 @@
                 "aTag": "generatore di impronte",
                 "secondPart": "di activeMind AG."
             }
+        }
+    },
+
+
+    "privacyPolicy": {
+        "h1": "Informativa sulla privacy",
+        "responsiblePerson": "Il responsabile del trattamento ai sensi delle leggi sulla protezione dei dati, in particolare del Regolamento generale sulla protezione dei dati dell'UE (GDPR), è:",
+
+        "yourDataSubjectRights": {
+            "h2": "I suoi diritti di interessato",
+            "explain": "È possibile esercitare i seguenti diritti in qualsiasi momento utilizzando i dati di contatto forniti dal nostro responsabile della protezione dei dati:",
+            "one": "Informazioni sui vostri dati memorizzati da noi e sul loro trattamento (art. 15 GDPR),",
+            "two": "Correzione dei dati personali errati (art. 16 GDPR),",
+            "three": "Cancellazione dei vostri dati da noi memorizzati (art. 17 GDPR),",
+            "four": "Limitazione del trattamento dei dati se non siamo ancora autorizzati a cancellare i vostri dati a causa di obblighi legali (art. 18 GDPR),",
+            "five": "Obiezione al trattamento dei vostri dati da parte nostra (art. 21 GDPR) e",
+            "six": "Portabilità dei dati, a condizione che abbiate acconsentito al trattamento dei dati o abbiate stipulato un contratto con noi (art. 20 GDPR).",
+            "ifYouHaveGivenUs...": "Se ci avete dato il vostro consenso, potete revocarlo in qualsiasi momento con effetto per il futuro.",
+            "youCanLodgeAComplaint...": "È possibile presentare un reclamo a un'autorità di controllo in qualsiasi momento, ad esempio all'autorità di controllo competente nello Stato federale del vostro luogo di residenza o all'autorità responsabile per noi in qualità di controllore.",
+            "aListOfSupervisoryAuthorities...": "L'elenco delle autorità di vigilanza (per il settore non pubblico) con i relativi indirizzi è disponibile all'indirizzo"
+        },
+
+        "contactForm": {
+            "h2": "Modulo di contatto",
+
+            "typeAndPurposeOfProcessing": {
+                "h3": "Tipologia e finalità del trattamento:",
+                "text": "I dati inseriti verranno memorizzati per poter comunicare con voi in modo personalizzato. A tal fine è necessario fornire un indirizzo e-mail valido e il proprio nome. Questi dati vengono utilizzati per l'assegnazione della richiesta e la successiva risposta. Il conferimento di ulteriori dati è facoltativo."
+            },
+
+            "legalBasis": {
+                "h3": "Basi legali:",
+                "text": {
+                    "one": "I dati inseriti nel modulo di contatto vengono trattati sulla base di un interesse legittimo (art. 6 par. 1 lett. f GDPR).",
+                    "two": "Con il modulo di contatto desideriamo semplificare il vostro contatto con noi. Le informazioni fornite saranno memorizzate allo scopo di elaborare la vostra richiesta e per eventuali domande successive.",
+                    "three": "Se ci contattate per richiedere un preventivo, i dati inseriti nel modulo di contatto saranno trattati per eseguire misure precontrattuali (art. 6 par. 1 lett. b GDPR)."
+                }
+            },
+
+            "recipient": {
+                "h3": "Destinatario:",
+                "text": "I destinatari dei dati possono essere i responsabili del trattamento."
+            },
+
+            "thirdCountryTransfer": {
+                "h3": "Trasferimento verso paesi terzi:",
+                "text": {
+                    "one": "I dati raccolti possono essere trasferiti nei seguenti paesi terzi:",
+                    "two": "No",
+                    "three": "Sono in vigore le seguenti garanzie di protezione dei dati:"
+                }
+            },
+
+            "storageDuration": {
+                "h3": "Durata di conservazione:",
+                "text": {
+                    "one": "I dati saranno cancellati entro 6 mesi dall'elaborazione della richiesta.",
+                    "two": "In caso di rapporto contrattuale, siamo soggetti ai periodi di conservazione previsti dalla legge secondo il Codice commerciale tedesco (HGB) e cancelliamo i vostri dati dopo la scadenza di tali periodi."
+                }
+            },
+
+            "provisionMandatoryOrRequired": {
+                "h3": "Provvedimento prescritto o necessario:",
+                "text": "Il conferimento dei dati personali è volontario. Tuttavia, possiamo elaborare la vostra richiesta solo se ci fornite il vostro nome, l'indirizzo e-mail e il motivo della richiesta."
+            }
+        },
+
+        "useOfScriptLibraries": {
+            "h2": "Utilizzo di librerie di script (Google Webfonts)",
+            "inOrderToDisplayOurContent...": "Per visualizzare i nostri contenuti in modo corretto e graficamente accattivante su tutti i browser, utilizziamo “Google Web Fonts” di Google LLC (1600 Amphitheatre Parkway, Mountain View, CA 94043, USA; di seguito “Google”) per visualizzare i caratteri su questo sito web.",
+            "furtherInformationOn...": "Ulteriori informazioni su Google Web Fonts sono disponibili all'indirizzo",
+            "andInThe...": "e nell'informativa sulla privacy di Google:"
+        },
+
+        "sslEncryption": {
+            "h2": "Crittografia SSL",
+            "text": "Per proteggere la sicurezza dei vostri dati durante la trasmissione, utilizziamo metodi di crittografia all'avanguardia (ad es. SSL) tramite HTTPS."
+        },
+
+        "informationAboutYourRightToObjectInAccordance": {
+            "h2": "Informazioni sul vostro diritto di opposizione ai sensi dell'art. 21 GDPR",
+
+            "individualRightToObject": {
+                "h3": "Diritto individuale di opposizione",
+                "text": {
+                    "one": "Avete il diritto di opporvi in qualsiasi momento, per motivi connessi alla vostra situazione particolare, al trattamento dei dati personali che vi riguardano basato sulla lettera f) dell'articolo 6, paragrafo 1, del GDPR (trattamento dei dati sulla base di un bilanciamento di interessi); ciò vale anche per la profilazione basata su questa disposizione ai sensi dell'articolo 4, paragrafo 4, del GDPR.",
+                    "two": "Se vi opponete, non tratteremo più i vostri dati personali, a meno che non possiamo dimostrare l'esistenza di motivi legittimi impellenti per il trattamento che prevalgono sui vostri interessi, diritti e libertà, o il trattamento serve per stabilire, esercitare o difendere rivendicazioni legali."
+                }
+            },
+
+            "recipientOfAnObjection": {
+                "h3": "Destinatario di un'obiezione"
+            }
+        },
+
+        "changesToOurPrivacyPolicy": {
+            "h2": "Modifiche all'informativa sulla privacy",
+            "text": "Ci riserviamo il diritto di modificare la presente informativa sulla privacy in modo che sia sempre conforme agli attuali requisiti di legge o di implementare le modifiche ai nostri servizi nell'informativa sulla privacy, ad esempio in occasione dell'introduzione di nuovi servizi. La nuova informativa sulla privacy sarà applicata alla vostra prossima visita."
+        },
+
+        "questionsDataProtectionOfficer": {
+            "h2": "Domande per il responsabile della protezione dei dati",
+            "text": "Se avete domande sulla protezione dei dati, inviateci un'e-mail o contattate direttamente il responsabile della protezione dei dati della nostra organizzazione:",
+            "providedBy": "L'informativa sulla privacy è stata creata con l'aiuto di activeMind AG, gli esperti per i",
+            "providedLink": "responsabili esterni della protezione dei dati",
+            "providedEnd": "(versione #2020-09-30)."
         }
     }
 }

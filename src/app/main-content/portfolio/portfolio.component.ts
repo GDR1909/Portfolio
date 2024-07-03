@@ -21,12 +21,12 @@ export class PortfolioComponent {
   /** List of projects with their image, name, used technologies, description, GitHub URL, and live test URL. */
   projects = [
     {
-      'img': 'assets/portfolioImg/elPolloLoco.png',
-      'name': 'El Pollo Loco',
-      'usedTech': 'JavaScript | HTML | CSS | OOP',
-      'description': 'descriptionKey.elPolloLoco',
-      'gitHubURL': 'https://github.com/GDR1909/El_Pollo_Loco',
-      'liveTestURL': 'https://davide-religioso.com/El_Pollo_Loco/index.html'
+      'img': 'assets/portfolioImg/join.png',
+      'name': 'Join',
+      'usedTech': 'JavaScript | HTML | CSS | Git',
+      'description': 'descriptionKey.join',
+      'gitHubURL': 'https://github.com/GDR1909/Join',
+      'liveTestURL': 'https://davide-religioso.com/Join/html/login.html'
     },
     {
       'img': 'assets/portfolioImg/pokedex.png',
@@ -37,12 +37,12 @@ export class PortfolioComponent {
       'liveTestURL': 'https://davide-religioso.com/Pokedex/index.html'
     },
     {
-      'img': 'assets/portfolioImg/join.png',
-      'name': 'Join',
-      'usedTech': 'JavaScript | HTML | CSS',
-      'description': 'descriptionKey.join',
-      'gitHubURL': 'https://github.com/GDR1909/Join',
-      'liveTestURL': 'https://davide-religioso.com/Join/html/login.html'
+      'img': 'assets/portfolioImg/elPolloLoco.png',
+      'name': 'El Pollo Loco',
+      'usedTech': 'JavaScript | HTML | CSS | OOP',
+      'description': 'descriptionKey.elPolloLoco',
+      'gitHubURL': 'https://github.com/GDR1909/El_Pollo_Loco',
+      'liveTestURL': 'https://davide-religioso.com/El_Pollo_Loco/index.html'
     }
   ];
 }

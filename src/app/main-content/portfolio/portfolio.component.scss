@@ -39,7 +39,6 @@ span {
 
         .projectInfo {
             translate: 0%;
-            // transform: translate(0%);
             opacity: 1;
             transition: all ease-in-out 750ms, opacity 750ms;
         }
@@ -89,7 +88,6 @@ span {
     display: flex;
     flex-direction: column;
     translate: -100%;
-    // transform: translate(-100%);
     opacity: 0;
     transition: all ease-in-out 750ms, opacity 750ms;
 }

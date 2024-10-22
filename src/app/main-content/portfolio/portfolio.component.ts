@@ -26,7 +26,7 @@ export class PortfolioComponent {
       'usedTech': 'Angular | TypeScript | SCSS | Firebase',
       'description': 'descriptionKey.daBubble',
       'gitHubURL': 'https://github.com/GDR1909/my-DA-Bubble',
-      'liveTestURL': 'https://davide-religioso.com/DA-Bubble/index.html'
+      'liveTestURL': 'https://da-bubble.davide-religioso.com/'
     },
     {
       'img': 'assets/portfolioImg/join.png',

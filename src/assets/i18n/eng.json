@@ -12,9 +12,9 @@
     "projectDescription": "A simple Jump-and-Run game based on an object-oriented approach. Help Pepe Peligroso collecting coins and salsa bottles and to fight against el pollo loco.",
 
     "descriptionKey": {
-        "elPolloLoco": "A simple Jump-and-Run game based on an object-oriented approach. Help Pepe Peligroso collecting coins and salsa bottles and to fight against el pollo loco.",
-        "pokedex": "Based on the PokéAPI a simple library that provides and catalogues pokemon information.",
-        "join": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories."
+        "daBubble": "A messenger similar to Slack. You can communicate with your team in various channels or send private messages to other users. You can also share images and PDFs directly in the chat.",
+        "join": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
+        "elPolloLoco": "A simple Jump-and-Run game based on an object-oriented approach. Help Pepe Peligroso collecting coins and salsa bottles and to fight against el pollo loco."
     },
 
     "contactH3": "Want to discuss a new project?",

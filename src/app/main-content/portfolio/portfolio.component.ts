@@ -23,7 +23,7 @@ export class PortfolioComponent {
     {
       'img': 'assets/portfolioImg/daBubble.png',
       'name': 'DA Bubble',
-      'usedTech': 'Angular | TypeScript | SCSS | Firebase',
+      'usedTech': 'Angular | TypeScript | HTML | SCSS | Firebase',
       'description': 'descriptionKey.daBubble',
       'gitHubURL': 'https://github.com/GDR1909/my-DA-Bubble',
       'liveTestURL': 'https://da-bubble.davide-religioso.com/'
@@ -39,7 +39,7 @@ export class PortfolioComponent {
     {
       'img': 'assets/portfolioImg/elPolloLoco.png',
       'name': 'El Pollo Loco',
-      'usedTech': 'JavaScript | HTML | CSS | OOP',
+      'usedTech': 'JavaScript | HTML | CSS',
       'description': 'descriptionKey.elPolloLoco',
       'gitHubURL': 'https://github.com/GDR1909/El_Pollo_Loco',
       'liveTestURL': 'https://davide-religioso.com/El_Pollo_Loco/index.html'

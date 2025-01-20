@@ -6,12 +6,30 @@ h1 {
     text-align: center;
     display: inline-block;
     width: min-content;
+    transform: translateY(50px);
+    scale: 0.9;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-out forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes fadeIn {
+    to {
+        transform: translateY(0px);
+        scale: 1;
+        opacity: 1;
+    }
 }
 
 .borderlineAndName {
     display: flex;
     align-items: center;
     gap: 30px;
+    transform: translateY(50px);
+    scale: 0.9;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-out forwards;
+    animation-delay: 0.5s;
 }
 
 .borderline {
@@ -37,6 +55,10 @@ h2 {
     left: -114px;
     bottom: 140px;
     transition: all ease-in-out 125ms;
+    scale: 0.9;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-out forwards;
+    animation-delay: 2.5s;
 
     &:hover {
         color: #FF9900;
@@ -53,6 +75,10 @@ h2 {
     position: absolute;
     right: 0px;
     bottom: 10px;
+    scale: 0.9;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-out forwards;
+    animation-delay: 2.5s;
 
     img {
         height: 60px;
@@ -90,6 +116,10 @@ h2 {
     font-size: 20px;
     margin-top: 70px;
     transition: all ease-in-out 125ms;
+    scale: 0.9;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-out forwards;
+    animation-delay: 2.5s;
 
     &:hover {
         cursor: pointer;

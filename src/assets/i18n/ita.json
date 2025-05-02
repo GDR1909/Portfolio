@@ -13,6 +13,7 @@
 
     "descriptionKey": {
         "daBubble": "Un messenger simile a Slack. È possibile comunicare con il proprio team in vari canali o inviare messaggi privati ad altri utenti. È anche possibile condividere immagini e PDF direttamente nella chat.",
+        "weatherPoint": "Con questa app puoi controllare il meteo attuale e una previsione di tre giorni per qualsiasi città. L’utente inserisce una città nella ricerca o sceglie una città popolare. L’app mostra la temperatura, le condizioni meteo e la qualità dell’aria — tutto in modo chiaro e semplice.",
         "join": "Task manager ispirato al sistema Kanban. Crea e organizza le attività utilizzando le funzioni di trascinamento, assegna utenti e categorie.",
         "elPolloLoco": "Un semplice gioco Jump-and-Run basato su un approccio orientato agli oggetti. Aiutate Pepe Peligroso a raccogliere monete e bottiglie di salsa e a combattere contro el pollo loco."
     },

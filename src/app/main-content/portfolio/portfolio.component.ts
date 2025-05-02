@@ -29,6 +29,14 @@ export class PortfolioComponent {
       'liveTestURL': 'https://da-bubble.davide-religioso.com/'
     },
     {
+      'img': 'assets/portfolioImg/weatherPoint.png',
+      'name': 'WeatherPoint',
+      'usedTech': 'Angular | TypeScript | HTML | SCSS | API',
+      'description': 'descriptionKey.weatherPoint',
+      'gitHubURL': 'https://github.com/GDR1909/weather-app',
+      'liveTestURL': 'https://WeatherPoint.davide-religioso.com/'
+    },
+    {
       'img': 'assets/portfolioImg/join.png',
       'name': 'Join',
       'usedTech': 'JavaScript | HTML | CSS',

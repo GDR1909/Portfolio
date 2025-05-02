@@ -34,7 +34,7 @@ export class PortfolioComponent {
       'usedTech': 'Angular | TypeScript | HTML | SCSS | API',
       'description': 'descriptionKey.weatherPoint',
       'gitHubURL': 'https://github.com/GDR1909/weather-app',
-      'liveTestURL': 'https://WeatherPoint.davide-religioso.com/'
+      'liveTestURL': 'https://weatherpoint.davide-religioso.com/'
     },
     {
       'img': 'assets/portfolioImg/join.png',

@@ -3,6 +3,22 @@
     max-width: 1440px;
     padding-top: 92px;
     padding-bottom: 280px;
+    position: relative;
+}
+
+img {
+    height: 40px;
+    rotate: 90deg;
+    position: absolute;
+    right: 0;
+    margin-right: 10px;
+    transition: ease-in-out 250ms;
+
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+        transition: ease-in-out 250ms;
+    }
 }
 
 
@@ -10,5 +26,15 @@
 @media screen and (max-width: 1600px) {
     .legalNotice {
         padding-bottom: 92px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    img {
+        height: 25px;
     }
 }

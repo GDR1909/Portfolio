@@ -107,8 +107,17 @@ app-contact-form {
     }
 }
 
-@media screen and (max-width: 410px) {
+@media screen and (max-width: 500px) {
     h2 {
-        top: -50px;
+        font-size: 35px;
+        top: -55px;
+    }
+
+    h3 {
+        font-size: 28px;
+    }
+
+    h4 {
+        font-size: 22px;
     }
 }

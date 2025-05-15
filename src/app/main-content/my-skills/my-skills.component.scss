@@ -125,11 +125,15 @@ h2 {
     }
 
     .skillDiv {
-        width: 105px !important;
+        width: 100px !important;
         gap: 10px !important;
 
         img {
             height: 50px !important;
+
+            &:hover {
+                transform: translateY(-4px);
+            }
         }
 
         span {
@@ -142,5 +146,12 @@ h2 {
     h2 {
         font-size: 15px;
         margin-top: -15px;
+    }
+}
+
+@media screen and (max-width: 325px) {
+    h2 {
+        font-size: 14px;
+        margin-top: -14px;
     }
 }

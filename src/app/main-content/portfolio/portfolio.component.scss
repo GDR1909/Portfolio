@@ -56,6 +56,7 @@ span {
     justify-content: center;
     align-items: center;
     position: relative;
+    z-index: 5;
 
     img {
         width: 620px;
@@ -87,7 +88,7 @@ span {
 .projectInfo {
     display: flex;
     flex-direction: column;
-    translate: -100%;
+    translate: -80%;
     opacity: 0;
     transition: all ease-in-out 750ms, opacity 750ms;
 }
@@ -134,7 +135,7 @@ a {
     }
 
     .projectInfo {
-        translate: 100%;
+        translate: 80%;
     }
 
     &:hover {
@@ -212,16 +213,25 @@ a {
 
     .projectImage {
         margin-top: 60px;
+
+        img {
+            filter: grayscale(0%);
+        }
+
+        .imageBorder {
+            display: none;
+        }
     }
 
     .projectInfo {
         width: 470px;
-        translate: 0% -100%;
+        translate: 0%;
+        opacity: 1;
     }
 
     .row-reverse {
         .projectInfo {
-            translate: 0% -100%;
+            translate: 0%;
         }
     }
 }
@@ -262,5 +272,28 @@ a {
 @media screen and (max-width: 382px) {
     h2 {
         font-size: 35px;
+    }
+
+    .counter {
+        font-size: 20px;
+        right: 10px;
+    }
+
+    .row-reverse {
+        .counter {
+            right: 0;
+            left: 10px;
+        }
+    }
+
+    .projectImage {
+        img {
+            width: 300px !important;
+            height: 184px !important;
+        }
+    }
+
+    .projectInfo {
+        width: 300px;
     }
 }

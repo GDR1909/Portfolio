@@ -249,3 +249,17 @@ h2 {
         font-size: 32px;
     }
 }
+
+@media screen and (max-width: 345px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    .borderline {
+        width: 60px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}

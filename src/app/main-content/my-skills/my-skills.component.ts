@@ -64,6 +64,10 @@ export class MySkillsComponent {
       'icon': 'assets/skillIcons/scss.png',
       'name': 'SCSS'
     },
+    {
+      'icon': 'assets/skillIcons/growthMindset.png',
+      'name': 'Growth Mindset'
+    },
     // {
     //   'icon': 'assets/skillIcons/wordpress.png',
     //   'name': 'WordPress'

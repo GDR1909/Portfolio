@@ -1,8 +1,10 @@
 <div class="iconsList">
     <h2>{{ "mySkills" | translate }}</h2>
 
-    <div *ngFor="let skill of skills" class="skillDiv">
-        <img [src]="skill.icon">
-        <span> <b> {{ skill.name }} </b> </span>
-    </div>
+    @for (skill of skills; track $index) {
+        <div class="skillDiv">
+            <img [src]="skill.icon">
+            <span><b>{{ skill.name }}</b></span>
+        </div>
+    }
 </div>

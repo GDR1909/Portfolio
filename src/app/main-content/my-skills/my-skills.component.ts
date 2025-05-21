@@ -1,11 +1,13 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { fadeIn } from '../../shared/animations';
 
 @Component({
   selector: 'app-my-skills',
   standalone: true,
   imports: [CommonModule, TranslateModule],
+  animations: [fadeIn],
   templateUrl: './my-skills.component.html',
   styleUrl: './my-skills.component.scss'
 })
@@ -16,6 +18,9 @@ export class MySkillsComponent {
    * @param {TranslateService} translate - The service used for language translation.
    */
   constructor(public translate: TranslateService) { }
+
+
+  popupOpen: boolean = false;
 
 
   /** List of skills with their icons and names. */
@@ -64,13 +69,25 @@ export class MySkillsComponent {
       'icon': 'assets/skillIcons/scss.png',
       'name': 'SCSS'
     },
-    {
-      'icon': 'assets/skillIcons/growthMindset.png',
-      'name': 'Growth Mindset'
-    },
     // {
     //   'icon': 'assets/skillIcons/wordpress.png',
     //   'name': 'WordPress'
     // }
   ];
+
+
+  /**
+   * Opens the popup.
+   */
+  showPopup() {
+    this.popupOpen = true;
+  }
+
+  
+  /**
+   * Closes the popup.
+   */
+  closePopup() {
+    this.popupOpen = false;
+  }
 }

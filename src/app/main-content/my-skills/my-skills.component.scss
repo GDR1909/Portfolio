@@ -48,10 +48,72 @@ h2 {
             transition: all ease-in-out 250ms;
         }
     }
+
+    .growthMindsetDiv {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        width: 120px;
+        position: relative;
+
+        .popup {
+            width: 246px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            position: absolute;
+            left: 0;
+            top: -190px;
+            border: solid 3px black;
+            padding: 15px;
+            background-color: #FFFCF3;
+            z-index: 10;
+            box-shadow: 6px 6px 3px rgba(255, 153, 0, 0.2);
+            transition: ease-in-out 250ms;
+
+            div {
+                display: flex;
+                gap: 20px;
+            }
+
+            span {
+                color: #FF9900;
+            }
+
+            p {
+                margin: 0;
+            }
+
+            .interestedSkill {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+
+                img {
+                    height: 30px;
+                }
+
+                p {
+                    color: #FF9900;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
 }
 
 
 /* Responsiveness */
+@media screen and (max-width: 1170px) {
+    .popup {
+        left: -200px !important;
+    }
+}
+
 @media screen and (max-width: 1135px) {
     h2 {
         font-size: 50px;

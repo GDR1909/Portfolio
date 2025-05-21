@@ -7,4 +7,30 @@
             <span><b>{{ skill.name }}</b></span>
         </div>
     }
+    
+    <div class="growthMindsetDiv">
+        @if (popupOpen) {
+            <div @fadeIn class="popup">
+                <span>Don't see the skill you looking for?</span>
+
+                <p>I have a special interest in learning:</p>
+
+                <div>
+                    <div class="interestedSkill">
+                        <img src="assets/skillIcons/react.png">
+                        <p>React</p>
+                    </div>
+
+                    
+                    <div class="interestedSkill">
+                        <img src="assets/skillIcons/vueJs.png">
+                        <p>Vue.js</p>
+                    </div>
+                </div>
+            </div>
+        }
+
+        <img src="assets/skillIcons/growthMindset.png" (mouseover)="showPopup()" (mouseleave)="closePopup()">
+        <span><b>Growth Mindset</b></span>
+    </div>
 </div>

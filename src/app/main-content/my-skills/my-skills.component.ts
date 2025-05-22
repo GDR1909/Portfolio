@@ -20,7 +20,7 @@ export class MySkillsComponent {
   constructor(public translate: TranslateService) { }
 
 
-  popupOpen: boolean = true;
+  popupOpen: boolean = false;
 
 
   /** List of skills with their icons and names. */

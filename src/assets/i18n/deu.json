@@ -8,6 +8,9 @@
 
     "aboutMeText": "Hallo! Mein Name ist Davide Religioso und ich komme aus Stuttgart. Das Internet, digitale Technologien und technische Innovationen haben mich schon immer fasziniert. Nun ist es an der Zeit, diese Leidenschaft in meinen Beruf als Frontend-Entwickler einzubringen.\n\nMit der Entscheidung, mich intensiv im Bereich der Frontend-Entwicklung weiterzubilden, habe ich einen wichtigen Schritt in meiner beruflichen Laufbahn gemacht. Um meine Leidenschaft gezielt in eine berufliche Richtung zu lenken, habe ich meine Fähigkeiten kontinuierlich weiterentwickelt und dabei mit modernen Technologien wie Angular und TypeScript gearbeitet.\n\nWeiter unten finden Sie eine Übersicht meiner Fähigkeiten sowie eine Auswahl meiner aktuellen Projekte. Ich lade Sie herzlich ein, mehr über meine Arbeit zu erfahren und freue mich über Ihr Interesse an meiner Seite.",
 
+    "mySkillsPopupSpan": "Nicht den passenden Skill gefunden?",
+    "mySkillsPopupP": "Ich bin besonders daran interessiert, Folgendes zu lernen:",
+    
     "portfolioText": "Hier sind Beispiele meiner Arbeit - gerne können Sie sie ausprobieren.",
     "projectDescription": "Ein einfaches Jump-and-Run-Spiel, das auf einem objektorientierten Ansatz basiert. Hilf Pepe Peligroso dabei, Münzen und Salsaflaschen einzusammeln und gegen El Pollo Loco zu kämpfen.",
 

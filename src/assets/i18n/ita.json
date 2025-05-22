@@ -8,6 +8,9 @@
 
     "aboutMeText": "Ciao, mi chiamo Davide Religioso e vivo a Stoccarda in Germania. Sono sempre stato affascinato da Internet, dalle tecnologie digitali e dalle innovazioni tecniche. Ora è arrivato il momento di portare questa passione nel mio lavoro di sviluppatore frontend.\n\nHo compiuto un passo importante nella mia carriera professionale decidendo di seguire una formazione intensiva nel campo dello sviluppo front-end. Per incanalare la mia passione in una direzione professionale, ho sviluppato continuamente le mie competenze e lavorato con tecnologie moderne come Angular e TypeScript.\n\nDi seguito troverete una panoramica delle mie competenze e una selezione dei miei progetti attuali. Vi invito a saperne di più sul mio lavoro e apprezzo il vostro interesse per il mio sito.",
 
+    "mySkillsPopupSpan": "Non trovi la competenza che stai cercando?",
+    "mySkillsPopupP": "Sono particolarmente interessato a imparare:",
+    
     "portfolioText": "Ecco degli esempi del mio lavoro - sentiti libero di provarli.",
     "projectDescription": "Un semplice gioco salta e corri basato su un approccio orientato agli oggetti. Aiuta Pepe Peligroso a raccogliere monete e bottiglie di salsa e a combattere contro el pollo loco.",
 

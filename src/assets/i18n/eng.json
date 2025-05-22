@@ -8,6 +8,9 @@
 
     "aboutMeText": "Hello, my name is Davide Religioso and I'm from Stuttgart, Germany. I have always been fascinated by the Internet, digital technologies and technical innovations. Now it's time to bring this passion into my job as a frontend developer.\n\nI have taken an important step in my professional career by deciding to train intensively in the field of front-end development. In order to channel my passion into a professional direction, I have continuously developed my skills, working with modern technologies such as Angular and TypeScript.\n\nBelow you will find an overview of my skills and a selection of my current projects. I invite you to learn more about my work and appreciate your interest in my site.",
 
+    "mySkillsPopupSpan": "Don't see the skill you're looking for?",
+    "mySkillsPopupP": "I have a special interest in learning:",
+    
     "portfolioText": "This page is a sample of my work - please feel free to try them out.",
     "projectDescription": "A simple Jump-and-Run game based on an object-oriented approach. Help Pepe Peligroso collecting coins and salsa bottles and to fight against el pollo loco.",
 

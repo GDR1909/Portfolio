@@ -94,7 +94,7 @@ h2 {
                 gap: 10px;
 
                 img {
-                    height: 30px;
+                    height: 30px !important;
                 }
 
                 p {
@@ -156,8 +156,31 @@ h2 {
         }
 
         span {
+            font-size: 14px;
+        }
+    }
+
+    .growthMindsetDiv {
+        width: 105px !important;
+        gap: 10px !important;
+
+        img {
+            height: 60px !important;
+        }
+
+        span {
             font-size: 14px
-        };
+        }
+
+        p {
+            font-size: 14px;
+        }
+
+        .popup {
+            width: 220px !important;
+            top: -160px !important;
+            left: -170px !important;
+        }
     }
 }
 
@@ -199,8 +222,35 @@ h2 {
         }
 
         span {
+            font-size: 12px;
+        }
+    }
+
+    .growthMindsetDiv {
+        width: 100px !important;
+        gap: 10px !important;
+
+        img {
+            height: 50px !important;
+
+            &:hover {
+                transform: translateY(-4px);
+            }
+        }
+
+        span {
             font-size: 12px
-        };
+        }
+
+        p {
+            font-size: 12px;
+        }
+
+        .popup {
+            width: 190px !important;
+            top: -150px !important;
+            left: -150px !important;
+        }
     }
 }
 
@@ -208,6 +258,12 @@ h2 {
     h2 {
         font-size: 15px;
         margin-top: -15px;
+    }
+
+    .growthMindsetDiv {
+        .popup {
+            left: -115px !important;
+        }
     }
 }
 

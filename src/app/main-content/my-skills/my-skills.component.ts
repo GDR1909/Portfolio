@@ -61,18 +61,18 @@ export class MySkillsComponent {
       'icon': 'assets/skillIcons/api.png',
       'name': 'Rest-API'
     },
-    {
-      'icon': 'assets/skillIcons/materialDesign.png',
-      'name': 'Material Design'
-    },
-    {
-      'icon': 'assets/skillIcons/scss.png',
-      'name': 'SCSS'
-    },
     // {
-    //   'icon': 'assets/skillIcons/wordpress.png',
-    //   'name': 'WordPress'
-    // }
+    //   'icon': 'assets/skillIcons/materialDesign.png',
+    //   'name': 'Material Design'
+    // },
+    // {
+    //   'icon': 'assets/skillIcons/scss.png',
+    //   'name': 'SCSS'
+    // },
+    {
+      'icon': 'assets/skillIcons/wordpress.png',
+      'name': 'WordPress'
+    }
   ];
 
 

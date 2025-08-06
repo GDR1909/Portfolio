@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { PortfolioService } from './portfolio.service';
@@ -11,7 +11,7 @@ import { LegalNoticeComponent } from './legal-notice/legal-notice.component';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 import { HeaderComponent } from './shared/components/header/header.component';
 import { MenuComponent } from './shared/components/menu/menu.component';
-
+import AOS from 'aos';
 
 /**
  * Factory function for creating an instance of TranslateHttpLoader.
@@ -22,7 +22,6 @@ import { MenuComponent } from './shared/components/menu/menu.component';
 export function HttpLoaderFactory(httpClient: HttpClient) {
   return new TranslateHttpLoader(httpClient, './assets/i18n/', '.json');
 }
-
 
 @Component({
   selector: 'app-root',
@@ -41,7 +40,7 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   /** The title of the application. */
   title = 'portfolio';
 
@@ -51,9 +50,28 @@ export class AppComponent {
    *
    * @param {PortfolioService} portfolioService - The service used to manage the portfolio.
    */
-  constructor(public portfolioService: PortfolioService) { }
+  constructor(public portfolioService: PortfolioService) {}
 
 
+  /**
+   * Lifecycle hook that is called after data-bound properties are initialized.
+   * Here we wait until the document is fully loaded before initializing AOS animations.
+   *
+   * @returns {void}
+   */
+  ngOnInit() {
+    document.onreadystatechange = function () {
+      if (document.readyState == 'complete') {
+        AOS.init({
+          duration: 1500,
+          easing: 'ease-in-out',
+          once: true,
+        });
+      }
+    };
+  }
+
+  
   /**
    * Closes the dropdown menu by calling the corresponding method in PortfolioService.
    */

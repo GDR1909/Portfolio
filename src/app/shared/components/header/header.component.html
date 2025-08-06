@@ -1,11 +1,11 @@
 <header>
-    <a href="">
+    <a href="" data-aos="fade-down" data-aos-delay="2000">
         <img src="assets/img/logo.png">
     </a>
 
     <div class="changeLanguageAndMenu">
-        <app-change-language></app-change-language>
+        <app-change-language data-aos="fade-down" data-aos-delay="2500"></app-change-language>
 
-        <img class="menuIcon" [src]="this.portfolioService.menuIconSrc" (click)="this.portfolioService.clickFunction()">
+        <img class="menuIcon" [src]="this.portfolioService.menuIconSrc" (click)="this.portfolioService.clickFunction()" data-aos="fade-down" data-aos-delay="3000">
     </div>
 </header>

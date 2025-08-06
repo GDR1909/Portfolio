@@ -1,265 +1,270 @@
 h1 {
-    font-family: 'Syne';
-    margin: 0;
-    font-weight: 800;
-    font-size: 128px;
-    text-align: center;
-    display: inline-block;
-    width: min-content;
-    transform: translateY(50px);
-    scale: 0.9;
-    opacity: 0;
-    animation: fadeIn 1.5s ease-out forwards;
-    animation-delay: 0.5s;
+  font-family: "Syne";
+  margin: 0;
+  font-weight: 800;
+  font-size: 128px;
+  text-align: center;
+  display: inline-block;
+  width: min-content;
+  // transform: translateY(50px);
+  // scale: 0.9;
+  // opacity: 0;
+  // animation: fadeIn 1.5s ease-out forwards;
+  // animation-delay: 0.5s;
 }
 
-@keyframes fadeIn {
-    to {
-        transform: translateY(0px);
-        scale: 1;
-        opacity: 1;
-    }
-}
+// @keyframes fadeIn {
+//     to {
+//         transform: translateY(0px);
+//         scale: 1;
+//         opacity: 1;
+//     }
+// }
 
 .borderlineAndName {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    transform: translateY(50px);
-    scale: 0.9;
-    opacity: 0;
-    animation: fadeIn 1.5s ease-out forwards;
-    animation-delay: 0.5s;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  // transform: translateY(50px);
+  // scale: 0.9;
+  // opacity: 0;
+  // animation: fadeIn 1.5s ease-out forwards;
+  // animation-delay: 0.5s;
 }
 
 .borderline {
-    border: 3px solid black;
-    height: 0;
-    width: 510px;
+  border: 3px solid black;
+  height: 0;
+  width: 510px;
 }
 
 h2 {
-    color: #FF9900;
-    font-weight: 700;
-    font-size: 48px;
-    margin: 0;
+  color: #ff9900;
+  font-weight: 700;
+  font-size: 48px;
+  margin: 0;
 }
 
-.email {
+.emailDiv {
+  position: absolute;
+  left: -114px;
+  bottom: 140px;
+  rotate: 270deg;
+
+  .email {
     color: black;
     text-decoration: none;
     font-weight: 300;
     font-size: 23px;
-    rotate: 270deg;
-    position: absolute;
-    left: -114px;
-    bottom: 140px;
+    // rotate: 270deg;
+    // position: absolute;
+    // left: -114px;
+    // bottom: 140px;
     transition: all ease-in-out 125ms;
-    scale: 0.9;
-    opacity: 0;
-    animation: fadeIn 1.5s ease-out forwards;
-    animation-delay: 2.5s;
+    // scale: 0.9;
+    // opacity: 0;
+    // animation: fadeIn 1.5s ease-out forwards;
+    // animation-delay: 2.5s;
 
     &:hover {
-        color: #FF9900;
-        transition: all ease-in-out 125ms;
+      color: #ff9900;
+      transition: all ease-in-out 125ms;
     }
+  }
 }
 
 .scrollDownDiv {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    position: absolute;
-    right: 0px;
-    bottom: 10px;
-    scale: 0.9;
-    opacity: 0;
-    animation: fadeIn 1.5s ease-out forwards;
-    animation-delay: 2.5s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  position: absolute;
+  right: 0px;
+  bottom: 10px;
+  // scale: 0.9;
+  // opacity: 0;
+  // animation: fadeIn 1.5s ease-out forwards;
+  // animation-delay: 2.5s;
 
-    img {
-        height: 60px;
-        width: 35px;
-        animation: bounceAnimation 3s infinite;
+  img {
+    height: 60px;
+    width: 35px;
+    animation: bounceAnimation 3s infinite;
+  }
+
+  a {
+    color: black;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 23px;
+    white-space: pre;
+    text-align: center;
+    transition: all ease-in-out 125ms;
+
+    &:hover {
+      color: #ff9900;
+      transition: all ease-in-out 125ms;
     }
-
-    a {
-        color: black;
-        text-decoration: none;
-        font-weight: 300;
-        font-size: 23px;
-        white-space: pre;
-        text-align: center;
-        transition: all ease-in-out 125ms;
-
-        &:hover {
-            color: #FF9900;
-            transition: all ease-in-out 125ms;
-        }
-    }
+  }
 }
 
 .sendAMessageButton {
-    color: black;
-    text-decoration: none;
-    display: none;
-    justify-content: center;
-    align-items: center;
-    width: 213px;
-    height: 68px;
-    border: solid 4px black;
-    background-color: #FFFCF3;
-    font-family: 'Overpass';
-    font-size: 20px;
-    margin-top: 70px;
-    transition: all ease-in-out 125ms;
-    scale: 0.9;
-    opacity: 0;
-    animation: fadeIn 1.5s ease-out forwards;
-    animation-delay: 2.5s;
+  color: black;
+  text-decoration: none;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 213px;
+  height: 68px;
+  border: solid 4px black;
+  background-color: #fffcf3;
+  font-family: "Overpass";
+  font-size: 20px;
+  margin-top: 70px;
+  transition: all ease-in-out 125ms;
+  // scale: 0.9;
+  // opacity: 0;
+  // animation: fadeIn 1.5s ease-out forwards;
+  // animation-delay: 2.5s;
 
-    &:hover {
-        cursor: pointer;
-        background-color: #ffecd2;
-        font-weight: bold;
-        width: 250px;
-        transition: all ease-in-out 125ms;
-    }
+  &:hover {
+    cursor: pointer;
+    background-color: #ffecd2;
+    font-weight: bold;
+    width: 250px;
+    transition: all ease-in-out 125ms;
+  }
 }
 
 @keyframes bounceAnimation {
+  0%,
+  20%,
+  50%,
+  80%,
+  to {
+    transform: translateY(0);
+  }
 
-    0%,
-    20%,
-    50%,
-    80%,
-    to {
-        transform: translateY(0)
-    }
+  40% {
+    transform: translateY(-30px);
+  }
 
-    40% {
-        transform: translateY(-30px)
-    }
-
-    60% {
-        transform: translateY(-15px)
-    }
+  60% {
+    transform: translateY(-15px);
+  }
 }
-
 
 /* Responsiveness */
 @media screen and (max-width: 1300px) {
-    h1 {
-        font-size: 100px;
-    }
+  h1 {
+    font-size: 100px;
+  }
 
-    .borderline {
-        width: 450px;
-    }
+  .borderline {
+    width: 450px;
+  }
 
-    h2 {
-        font-size: 39px;
-    }
+  h2 {
+    font-size: 39px;
+  }
 }
 
 @media screen and (max-width: 1080px) {
-    h1 {
-        font-size: 80px;
-    }
+  h1 {
+    font-size: 80px;
+  }
 
-    .borderline {
-        width: 310px;
-    }
+  .borderline {
+    width: 310px;
+  }
 
-    h2 {
-        font-size: 30px;
-    }
+  h2 {
+    font-size: 30px;
+  }
 }
 
 @media screen and (max-width: 1000px) {
-    .email {
-        left: -89px;
-    }
+  .email {
+    left: -89px;
+  }
 
-    .scrollDownDiv {
-        right: 23px;
-    }
+  .scrollDownDiv {
+    right: 23px;
+  }
 }
 
 @media screen and (max-width: 830px) {
-    h1 {
-        font-size: 45px;
-    }
+  h1 {
+    font-size: 45px;
+  }
 
-    .borderlineAndName {
-        gap: 10px;
-    }
+  .borderlineAndName {
+    gap: 10px;
+  }
 
-    .borderline {
-        width: 150px;
-    }
+  .borderline {
+    width: 150px;
+  }
 
-    h2 {
-        font-size: 23px;
-    }
+  h2 {
+    font-size: 23px;
+  }
 }
 
 @media screen and (max-width: 600px) {
-    h1 {
-        font-size: 40px;
+  h1 {
+    font-size: 40px;
+  }
+
+  .borderline {
+    width: 100px;
+  }
+
+  h2 {
+    font-size: 21px;
+  }
+
+  .sendAMessageButton {
+    display: flex;
+    margin-top: 50px;
+  }
+
+  .email {
+    display: none;
+  }
+
+  .scrollDownDiv {
+    right: 0;
+    left: 0;
+
+    a {
+      font-size: 16px;
     }
 
-    .borderline {
-        width: 100px;
+    img {
+      height: 50px;
+      width: 30px;
     }
-
-    h2 {
-        font-size: 21px;
-    }
-
-    .sendAMessageButton {
-        display: flex;
-        margin-top: 50px;
-    }
-
-    .email {
-        display: none;
-    }
-
-    .scrollDownDiv {
-        right: 0;
-        left: 0;
-
-        a {
-            font-size: 16px;
-        }
-
-        img {
-            height: 50px;
-            width: 30px;
-        }
-    }
+  }
 }
 
 @media screen and (max-width: 425px) {
-    h1 {
-        font-size: 32px;
-    }
+  h1 {
+    font-size: 32px;
+  }
 }
 
 @media screen and (max-width: 345px) {
-    h1 {
-        font-size: 30px;
-    }
+  h1 {
+    font-size: 30px;
+  }
 
-    .borderline {
-        width: 60px;
-    }
+  .borderline {
+    width: 60px;
+  }
 
-    h2 {
-        font-size: 20px;
-    }
+  h2 {
+    font-size: 20px;
+  }
 }
